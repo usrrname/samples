@@ -1,0 +1,30 @@
+#bgButton{
+    padding-left:0.5em;
+}
+#bgButton:hover{
+    cursor:pointer;
+}
+.moving-bg {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0rem;
+    background-color: #eee;
+    background-image: linear-gradient(hsl(10, 80%, 80%), hsl(190, 50%, 70%), hsl(225, 40%, 50%));
+    background-size: 100% 200%;
+    animation: bg-move 5s infinite;
+    will-change: background-position;
+    z-index:-4;
+    position:fixed;
+    top:0;
+}
+
+@keyframes bg-move {
+    0%,
+    50% {
+        background-position: center top;
+    }
+    50% {
+        background-position: center bottom;
+    }
+}

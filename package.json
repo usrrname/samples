@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "jen chan portfolio",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "octicons": "^7.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usrrname/samples.git"
+  },
+  "author": "jen chan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/usrrname/samples/issues"
+  },
+  "homepage": "https://github.com/usrrname/samples#readme"
+}
