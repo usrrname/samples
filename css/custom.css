@@ -6,6 +6,13 @@ body {
     padding: 0;
     margin: 0;
 }
+<<<<<<< HEAD
+=======
+article{
+    padding-top:1em;
+    padding-bottom:1em;
+}
+>>>>>>> updated site
 .navbar {
     margin: 0;
     padding: 0;
