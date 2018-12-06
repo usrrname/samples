@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,900|Source+Sans+Pro:400,600|Yeseva+One');
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+h3{
+  font-weight: 600;
+}
+ul{
+  padding-left: 1em;
+}
+li{
+  padding: 0.4em 0.1em;
+}
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns:  1fr 300px;
+    grid-template-rows: auto 1fr auto;
+  }
+}
+
+header {
+  grid-column: span 3;
+  padding: 1.8em;
+  text-align: left;
+  font-size: 1.4em;
+  background-color: slateblue;
+  border: inset 10px wheat;
+  color: white;
+}
+
+main {
+  flex: 1;
+  padding: 1.2em;
+  font-size: 1em;
+  border: inset 10px aquamarine;
+  background-color: lavender;
+}
+
+section{
+padding: 1em;
+}
+aside {
+  padding: 1.2em;
+  background-color: lightpink;
+  border: inset 10px darkorange;
+}
+
+footer {
+  grid-column: span 3;
+  padding: 1em;
+  text-align: center;
+  font-size: 1.4em;
+  background-color: transparent;
+  color: lightskyblue;
+  border: inset 10px darkblue;
+}
+
+h1 {
+  margin-bottom: 1em;
+  font-size: 1.3em;
+  font-weight: bold;
+}
