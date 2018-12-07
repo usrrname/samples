@@ -2,6 +2,9 @@
 body {
   font-family: "Source Sans Pro", sans-serif;
 }
+p{
+  font-size: 1em;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -15,6 +18,21 @@ ul{
 }
 li{
   padding: 0.4em 0.1em;
+}
+.heading{
+display: inline-block;
+padding-left: 5px;
+padding-bottom: 5px;
+}
+footer ul{
+  display: flex;
+  flex-flow: column-wrap;
+  align-items: center;
+  justify-content: center;
+}
+img .icon{
+  position: relative;
+  padding: 5px 10px;
 }
 @media (min-width: 768px) {
   .container {
@@ -30,7 +48,7 @@ header {
   text-align: left;
   font-size: 1.4em;
   background-color: slateblue;
-  border: inset 10px wheat;
+  border: inset 7px wheat;
   color: white;
 }
 
@@ -48,7 +66,7 @@ padding: 1em;
 aside {
   padding: 1.2em;
   background-color: lightpink;
-  border: inset 10px darkorange;
+  border: inset 8px darkorange;
 }
 
 footer {
@@ -58,7 +76,7 @@ footer {
   font-size: 1.4em;
   background-color: transparent;
   color: lightskyblue;
-  border: inset 10px darkblue;
+  border: inset 5px silver;
 }
 
 h1 {
