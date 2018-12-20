@@ -6,38 +6,34 @@ body {
     padding: 0;
     margin: 0;
 }
-<<<<<<< HEAD
-=======
 article{
     padding-top:1em;
     padding-bottom:1em;
 }
->>>>>>> updated site
 .navbar {
-    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 2em;
     padding: 0;
+    text-transform: uppercase;
     overflow: hidden;
     width: 100%;
-    background-color: #ddd;
-    list-style-type: none;
 }
 a:link{
 text-decoration: none;
-color:orangered;
+color:#333366;
 }
 a:active{
     text-decoration:none;
+    color: redorange;
 }
 a:hover {
     text-decoration: none;
     font-weight: bold;
-    font-size: medium;
 }
 a:visited{
-    color:navy;
-}
-a.orange {
-    color: orange;
+    color:brown;
 }
 a:focus{
     padding:0.3rem;
@@ -76,9 +72,12 @@ line-height:1.5;
     line-height: 1.25;
     padding-left:0.5rem;
 }
-.navbar{
-    font-family: 'Montserrat',
-    sans-serif;
+.navbar li{
+     list-style-type: none;
+     font-family: "Montserrat",
+     Arial,
+     sans-serif;
+     font-weight: 300;
 }
 /* Measure is limited to ~66 characters */
 .measure {
@@ -93,11 +92,11 @@ img{
     height:auto;
     margin:auto 0;
 }
-pv2{
+.pv2{
     padding-top:0.5rem;
     padding-bottom:0.5rem;
 }
-ph2{
+.ph2{
       padding-left:0.5rem;
       padding-right:0.5rem;
 }
@@ -133,18 +132,9 @@ margin:auto;
 .mb2{
     margin-bottom:2em;
 }
-footer ul{
-    width:100%;
-    list-style-type: none;
-    display:inline-block;
-}
+
 footer ul li a{
-    color:lightseagreen;
-    size:0.8rem;
-    font-family:"Open Sans", Arial, Helvetica, sans-serif;
-}
-.pink{
-    color:pink;
+    font-family:"Ubuntu", Arial, Helvetica, sans-serif;
 }
 /* fade transition */
 @keyframes fadeIn {
@@ -160,74 +150,107 @@ footer ul li a{
 .is-paused {
     animation-play-state: paused;
 }
+
+
+/*  desktop */
+@media all and (min-width:1024px) {
+    #menu {
+        display:flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-items: center;
+        font-size: 1.6em;
+    }
+    .ph5-l {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .pv5-l {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    footer ul li {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        width: 100%;
+        padding: unset;
+        list-style-type: none;
+    }
+}
 /* tablets and desktop */
-@media screen and (max-width:768px){
+@media all and (max-width:768px){
     .ph4-m{
         padding-left:1rem;
         padding-right:1rem;
     }
     span.icon {
         display: none;
-        font-size: 1rem;
         text-decoration: none;
         color: gray;
         background-color: #333;
     }
 }
-@media screen and (max-width:1024px) {
-    .ph5-l {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-    .pv5-l{
-        padding-top:2rem;
-        padding-bottom:2rem;
-    }
-}
 /* medium screens */
-@media screen and ( min-width: 601px) {
+@media all and ( min-width: 601px) {
     span .icon {
         display: none;
         position: absolute;
+        vertical-align: middle;
         overflow: hidden;
-        font-size: 1rem;
     }
-    ul li {
-        display: inline-block;
-        padding: 14px 17px;
+    ul.navbar li {
+        padding: 0.5em 0.8em;
         list-style-type: none;
-    }
-    ul .navbar li a {
-        color: black;
+        font-size: medium;
         list-style-type: none;
         text-decoration: none;
-        font-size: medium;
-        text-align: center;
-        vertical-align: middle;
+    }
+    footer ul li {
+        display: flex;
+        flex-flow: row wrap;
+        list-style-type: none;
+        justify-content: space-evenly;
+        align-items: baseline;
+        font-size: 1em;
     }
 }
 /* smaller screens */
-@media screen and (max-width: 600px) {
-    span .icon {
-        display: block;
-        text-align: right;
+@media all and (max-width: 600px) {
+    span .icon.right {
+        display: inline-block;
         background-color: #ddd;
-        padding: 0.7em;
-        margin:0;
+        font-size: 1.8em;
+        padding: 0.5em 1.5em;
+        margin-right:auto;
+        text-align: right;
         width: 100%;
     }
     ul.navbar li a {
         display: none;
     }
-    ul li .responsive {
-        display: block;
-        padding: 0.5em 2em;
+    ul.navbar.responsive,li{
+        display:flex;
+        background-color: #ddd;
+        background-size: cover;
+        flex-flow: column nowrap;
         list-style-type: none;
         width:100%;
+        justify-items: stretch;
+        align-items: center;
+        font-size: 1.85em;
     }
     ul.navbar li .responsive has:a(:first-child) {
-        text-align: left;
-        padding: 1.5em 0.8em;
-        font-size: x-small;
+        list-style-type: none;
+        margin: 1.5em 0.8em;
+    }
+    footer ul li{
+        display: flex;
+        flex-flow: column nowrap;
+        list-style-type: none;
+        align-items: center;
+        background-color: transparent;
+        font-size: 1.5em;
     }
 }

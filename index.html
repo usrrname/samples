@@ -20,7 +20,7 @@
 </head>
 <body>
 <span>
-    <a href="javascript:void(0);" class="icon right" style="color:gray;"onclick="noBootstrap()"><i class="fa fa-bars" aria-hidden="true"></i></a>
+    <a href="javascript:void(0);" class="icon right" style="color:gray;"onclick="noBootstrap()"><i id="hamburger" class="fa fa-bars" aria-hidden="true"></i></a>
 </span>
 <ul class="navbar" id="menu">
 <li><a href="#home" class="active">updates</a></li>
@@ -31,122 +31,100 @@
 </div>
 <div class = "fade-in fl w-100">
 <div id="moving-bg"></div>
-<div id="xchange"></div>
-<div class="pa3">
+<div class="mt-3 mb-3">
 <span id="bgButton" role="button" class="button">&#9752;</span>
 </div>
-<div class="pv3 ph3 ph4-m ph5-l">
-<div id="home" class="measure db center f5 f4-ns">
-    <p class="lh-copy">Welcome to my page.<br>
-      <h3 class="lh-title">Updates</h3> 
-      <article> 
-        <img src="img/construction.gif" style="border:0;" alt="construction pikachu drilling gif"><br><br>
-                <p>Oct 2018: <a href="http://ifcatsneed.art">If Cats Need Art</a> site launched along with <a href="https://itunes.apple.com/us/app/tiddl/id1435369864?mt=8" target="_blank">Tiddl</a>, 
+<div class="pa2 mt-3 mb-3">
+<div id="home" class="measure center f5 f4-ns ph4-m">
+<h3 class="lh-title">Updates</h3>
+<article class="lh-copy ph3">
+                <p>Nov 2018: As part of a code challenge I made this <a href="https://usrrname.github.io/knockoff-slack/index.html" target="_blank">knock-off slack</a> interface with CSS grid and flexbox</p>
+                <p>Oct 2018: <a href="http://ifcatsneed.art" target="_blank">If Cats Need Art</a> site launched along with <a href="https://itunes.apple.com/us/app/tiddl/id1435369864?mt=8" target="_blank">Tiddl</a>, 
                     a sound sampler app for cats and cat owners. We debuted our wee product at an exhibition in Montreal!</p>
-                    <img src="img/ifcats.png">
-                <p></p>
+                    <img class="db w-100" src="img/ifcats.png">
                 <p>May 2018: <a href="https://thecarded.ca">The Carded.ca</a> relaunched</p>
                 <p>Jan 2018: wrote <a href="https://codepen.io/usrrname/pen/mpqjMB">a little rent splitter</a></p>
                 <p>Dec 2017: I blogged about (not) planning a <a href="https://dev.to/jenninat0r/what-i-learned-from-not-planning-a-web-app-from-start-to-finish-14a"
                 target="_blank">web app</a>.</p>
-                <p>Nov 2017: I helped with R&amp;D for
-                <a href="http://www.trinitysquarevideo.com/exhibition-vart-projects/" target="_blank" >this VR art app</a>
+                <p>Nov 2017: I helped with R&amp;D for Trinity Square Video's
+                <a href="http://www.trinitysquarevideo.com/exhibition-vart-projects/" target="_blank" >VR art app</a> and
                 <a href="https://www.theglobeandmail.com/arts/art-and-architecture/venturing-into-the-virtual-world-with-a-new-artapp/article37066961/" target="_blank">
                 we got press</a>.</p>
-                <p>About that <span style="outline:solid lightskyblue 2px;">blue outline</span>: It's for accessibility.</p>
+                <p class="f6 center f5-ns">This site was created with tachyons.</p>
             </p>
         </article>
     </div>
 </div>
-<div class="pv3 ph3 ph4-m ph5-l">
-<div id="work" class="heading measure db center f5 f4-ns">
-  <h3 class="lh-title">Work</h3>
+<div class="pa2 mt-3 mb-3">
+<div id="work" class="measure center f5 f4-ns ph4-m">
+<h3 class="heading lh-title">Work</h3>
   <article>
-        <img class="db w-100 pv2 mt3-ns" src="img/zombie.png" alt="Screenshot of Zombie Solo Jazz webpage"/>
-<p class="lh-copy ph3">
-    <a href="https://usrrname.github.io/wallpaper/" class="link b" target="_blank">Zombie Solo Jazz</a>, web page made with 3JS and Javascript. An animated wallpaper of randomized rotating party cups
-    with rotating red ball inside, array vision camera snippet, and an identical crack on each rim, for New Forms Festival
-    in Vancouver
-</p>
+    <img class="db w-100" src="img/zombie.png" alt="Screenshot of Zombie Solo Jazz webpage"/>
+    <p class="lh-copy ph3">
+        <a href="https://usrrname.github.io/wallpaper/" target="_blank">Zombie Solo Jazz</a>, web page made with 3JS and Javascript. An animated wallpaper of randomized rotating party cups with rotating red ball inside, array vision camera snippet, and an identical crack on each rim, for New Forms Festival in Vancouver</p>
   </article>
   <article>
-    <img class="db w-100 pv2 mt3-ns" src="img/theCarded3.png" alt="screenshot of third version of The Carded website">
-<p class="lh-copy ph3">
-    <a href="http://thecarded.ca" class="link b" target="_blank">The Carded</a>. Landing page for a Civic Tech project. HTML and CSS, a single-page app made with AJAX and vanilla js.
-        </p>
+    <img class="db w-100" src="img/theCarded3.png" alt="screenshot of third version of The Carded website">
+    <p class="lh-copy ph3">
+        <a href="http://thecarded.ca" target="_blank">The Carded</a>. Landing page for a Civic Tech project. HTML and CSS, a single-page app made with AJAX and vanilla js.
+    </p>
 </article>
 <article>
-<img class="db w-100 pv2 mt3-ns" src="img/importantMen.png" alt="Landing page screenshot Important Men website">
-<p class="lh-copy ph3">
-    <a href="http://importantmen.com" class="link b lh-copy" target="_blank">Important Men</a> looks like a lifestyle
-    website and modelling portfolio. Commissioned by IOTA and Canada Council for the
-    Arts. Inspired by her recent work in digital advertising and different online initiatives to reform "toxic
-    masculinity",
-    I wanted to create my own series of male portraiture by photographing the important masculine influences in my
-    life.
-    Built with Node, Express, MongoDB and sendgrid API for sending an email with form input to the "agony aunty"
-    Matthew's inbox. Email includes form which allows Matthew to respond. Both question and answer are stored on
-    MLab/MongoDB's sandbox. Backend on Heroku (free tier), front end on github pages. Some attempt at ES6.
-</p>
-<p>I blogged about <a href="https://dev.to/jenninat0r/what-i-learned-from-not-planning-a-web-app-from-start-to-finish-14a"
-        target="_blank">what I learned</a> here.</p>
+    <img class="db w-100" src="img/importantMen.png" alt="Landing page screenshot Important Men website">
+    <p class="lh-copy ph3">
+        <a href="http://importantmen.com" target="_blank">Important Men</a> looks like a lifestyle
+        website and modelling portfolio. Commissioned by IOTA and Canada Council for the
+        Arts. Inspired by her recent work in digital advertising and different online initiatives to reform "toxic
+        masculinity",
+        I wanted to create my own series of male portraiture by photographing the important masculine influences in my
+        life.
+        Built with Node, Express, MongoDB and sendgrid API for sending an email with form input to the "agony aunty"
+        Matthew's inbox. Email includes form which allows Matthew to respond. Both question and answer are stored on
+        MLab/MongoDB's sandbox. Backend on Heroku (free tier), front end on github pages. Some attempt at ES6.
+    <br>I blogged about <a href="https://dev.to/jenninat0r/what-i-learned-from-not-planning-a-web-app-from-start-to-finish-14a"
+            target="_blank">what I learned</a> here.</p>
 </article>
 <article>
-<img class="db w-100 pv2 mt3-ns" src="img/shirtify1.png" alt="Photo of parody menswear website.">
-<img class="db w-100 pv2 mt3-ns" src="img/shirtify2.png" alt="Photo of parody menswear website.">
-<p class="lh-copy ph3">
-    <a href="https://github.com/usrrname/shopapp/tree/gh-pages" class="link b lightblue" target="_blank">Shirtify</a>, a parody menswear site
-    built with Angular 1.x, MongoDB, photo upload, admin side, login with authentication.
-</p>
+    <img class="db w-100" src="img/shirtify1.png" alt="Photo of parody menswear website.">
+    <img class="db w-100" src="img/shirtify2.png" alt="Photo of parody menswear website.">
+    <p class="lh-copy ph3">
+        <a href="https://github.com/usrrname/shopapp/tree/gh-pages" class="link b lightblue" target="_blank">Shirtify</a>, a parody menswear site
+        built with Angular 1.x, MongoDB, photo upload, admin side, login with authentication.
+    </p>
 </article>
 <article>
-    <img class="db w-100 pv2 mt3-ns" src="img/generalcomplaints.png" alt="a website full of the latest complaints from twitter">
-    <p class="lh-copy ph3"><a class="link b" href="https://github.com/usrrname/complaints">General Complaints</a> uses
+    <img class="db w-100" src="img/generalcomplaints.png" alt="a website full of the latest complaints from twitter">
+    <p class="lh-copy ph3"><a href="https://github.com/usrrname/complaints">General Complaints</a> uses
         Twitter API and some language filtering to return the most outraged and whiney popular tweets from the past day or
         the last seven days. It was made with Angular 1.x, Moment.JS, Express and Node.</p>
 </article>
 <article>
-<img class="db w-100 pv2 mt3-ns" src="img/portal.png" alt="Landing page screenshot captive portal website">
-<p class="lh-copy ph3">
-    <a href="https://github.com/usrrname/captive-portal" class="link b" target="_blank">S.C.U.M </a> (Society of
-    Cutting Up Misogynists) is a series of hotspot landing pages that contains a rewritten version of a dated radical
-    feminist manifesto, cloaked under lengthy terms and conditions and a choose-your-own-ending webpage quoting The
-    Matrix. Several versions made for testing with PFsense. TL;DR: wifi hotspot pages that require users to read long
-    terms and conditions and an offensively radical manifesto before offering users free internet service. Installation
-    at Art Gallery of Southwestern Manitoba in Brandon, MB sponsorted by Juggernaut Computers. The captive portal was
-    created using PfSense, javascript, jquery, html and css/tachyons. The original goal was to run a wifi hotspot for
-    13 km in downtown Brandon using UNIFI's hotspot extender. I'm not sure how far it really went.
-</p>
-</article>
-<article>
-        <img class="db w-100 pv2 mt3-ns" src="img/tiddl.png" alt="Screenshot of webpage" />
-        <p class="lh-copy ph3">
-            <a href="www.ifcatsneed.art" class="link b" target="_blank">If Cats Need Art</a>, web page made
+    <img class="db w-100" src="img/tiddl.png" alt="Screenshot of webpage" />
+        <p class="lh-copy ph3"><a href="www.ifcatsneed.art" target="_blank">If Cats Need Art</a>, web page made
             with Vue-Cli and webpack, Express server endpoint sending JSON from Google Sheets, deployed on Nearly Free Speech. The site was made with the intention of including future design projects related to UX for domestic cats.
         </p>
 </article>
  </div> 
  </div>    
-<div class="pv3 ph3 ph4-m ph5-l">
-<div id="about" class="measure db center f5 f4-ns">
-   <h3 class="lh-title">About</h3>
-   <article> 
-<p class="lh-copy ph3"> Artist turned dev. I like to prototype in code. Previously support engineer at at ReCollect and front end dev at Mirum. I live in Toronto. Available for remote or fulltime work. I'm a <a href="https://saic.academia.edu/JenniferChan" class="link b orange" target="_blank">former academic</a> and
-    <a href="https://vimeo.com/129512515" class="link b orange" target="_blank">event organizer</a>. I occasionally
-    <a href="http://asdfg.yelp.ca"
-        class="link b orange" target="_blank">review</a> fancy foods that I can't afford. Years ago some very generous people made a wikipedia
-    artist
-    <a href="https://en.wikipedia.org/wiki/Jennifer_Chan_(artist)" target="_blank">page</a> of me.</p>
-<p class="lh-copy ph3">Here's my
-    <a href="./resume/" class="link b" target="_blank">CV</a>
-</p>
-   </article>       
-  </div>
+<div class="pa2 mt-3 mb-3">
+<div id="about" class="measure-wide db center">
+<h3 class="lh-title f5 f4-ns ph4-m">About</h3>
+    <article> 
+            <p class="lh-copy ph3"> Artist turned dev. I like to prototype in code. Previously support engineer at at ReCollect and front end dev at Mirum. I live in Toronto. Available for remote or fulltime work. I'm a <a href="https://saic.academia.edu/JenniferChan" class="link b orange" target="_blank">former academic</a> and
+                <a href="https://vimeo.com/129512515" class="link b orange" target="_blank">event organizer</a>. I occasionally
+                <a href="http://asdfg.yelp.ca"
+                    class="link b orange" target="_blank">review</a> fancy foods that I can't afford. Years ago some very generous people made a wikipedia
+                artist
+                <a href="https://en.wikipedia.org/wiki/Jennifer_Chan_(artist)" target="_blank">page</a> of me.</p>
+                <p class="lh-copy ph3">Here's my <a href="./resume/" target="_blank">resumé</a>
+            </p>
+    </article>       
+    </div>
 </div>
-<footer class="mb2 pv5-l ph3 ph4-m ph5-l">
-  <div id='contact' class="measure db center f5 f4-ns">
-    <h3 class="lh-title">Contact</h3>
-  <ul class='f6'>
+<footer class="pa2 mt-3 mb-3">
+  <div id='contact' class="measure-wide db center">
+<h3 class="lh-title f5 f4-ns ph4-m">Contact</h3>
+<ul class='f5 f4-ns'>
     <li><a href="http://github.com/usrrname" class="link orange" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> github</a></li>
     <li><a href="https://medium.com/@jenninat0r" class="link orange" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i> medium</a></li>
     <li><a class="link orange" href="https://stackoverflow.com/users/3394599/usrrname" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i> stack overflow</a></li>
