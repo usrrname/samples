@@ -16,17 +16,17 @@ button.addEventListener('click', (e) => {
 
 // toggle between responsive menu in smaller screens
 const listItems= document.getElementById('menu').children;
+
 const noBootstrap = () => {
         const nav = listItems;
-      console.log(listItems);
                 for (var i = 0; i < nav.length; i++) {
-                if (nav[i].firstChild.className !== 'responsive') {           
-                        nav[i].firstChild.className = "responsive";
+                if (nav[i].className !== 'responsive') {           
+                        nav[i].className = "responsive";
                       nav[i].firstChild.style.display = "inline-block";
                 }
-                else if (nav[i].firstChild.className === 'responsive'){
-                        nav[i].firstChild.className = "";
-                nav[i].firstChild.style.display = "none";
+                else if (nav[i].className === 'responsive'){
+                        nav[i].className = "";
+                nav[i].style.display = "none";
         }
         }       
 }

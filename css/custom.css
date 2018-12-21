@@ -1,16 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Lato');
 /* css adapted from tachyons */
+* {
+    box-sizing: border-box;
+}
 body {
     width: 100%;
     height: 100% cover!important;
     background: linear-gradient(180deg, #ddd 0%, #c198e2 51%, #9fa2d6 75%);
-    border: 4px inset solid blue;
     padding: 0;
     margin: 0;
-}
-article{
-    margin-top:1em;
-    margin-bottom:1em;
 }
 .navbar {
     display: flex;
@@ -31,8 +29,51 @@ a:active{
     color: redorange;
 }
 a:hover {
-    text-decoration: none;
+    cursor:pointer;
     font-weight: bold;
+}
+.navbar li span {
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+@media all and (min-width:992px){
+    ul.navbar li:hover span:before,
+    ul.navbar li:hover span:after {
+        width: 100%;
+        opacity: 1;
+    }
+
+    ul.navbar li:hover span.hover-3:before,
+    ul.navbar li:hover span.hover-3:after {
+        width: 50%;
+    }
+    .navbar li span.hover::before,
+    .navbar li span.hover::after {
+        width: 100%;
+        opacity: 1;
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        width: 0px;
+        height: 5px;
+        margin: 5px 0 0;
+        transition: all 0.2s ease-in-out;
+        transition-duration: 0.75s;
+        opacity: 0;
+    }
+
+    span.hover-3:before {
+        left: calc(50%);
+        background-color: #ad6397;
+    }
+
+    span.hover-3:after {
+        right: calc(50%);
+        background-color: #ad6397;
+    }
 }
 a:visited{
     color:brown;
@@ -62,7 +103,7 @@ ul.navbar li a:active {
     font-size: .875rem;
 }
 p{
-    font-family: 'Ubuntu',
+    font-family: 'Lato',
     sans-serif;
     font-size: 1rem;
     line-height: auto;
@@ -92,7 +133,7 @@ line-height:1.5;
 img{
     width:100%;
     height:auto;
-    margin:auto 0;
+    padding: 0.5em;
 }
 .pv2{
     padding-top:0.5rem;
@@ -244,19 +285,21 @@ footer ul li a{
     ul.navbar li a {
         display: none;
     }
-    ul.navbar.responsive,li{
+    ul.navbar{
         display:flex;
-        background-color: #ddd;
-        background-size: cover;
         flex-flow: column nowrap;
-        list-style-type: none;
         width:100%;
-        justify-items: stretch;
-        align-items: center;
         font-size: 1.85em;
+        background-size: cover;
+        background-color: #ddd;
+        align-items: center;
     }
-    ul.navbar li .responsive has:a(:first-child) {
-        display: flex;
+    ul.navbar +li.responsive {
+        padding: 0.5em;
+        list-style-type: none;
+        justify-content: space-around;
+    }
+    ul.navbar+li.responsive has:a(:first-child) {
         list-style-type: none;
         margin: 1.5em 0.8em;
     }
