@@ -413,7 +413,7 @@ footer ul li a{
     img{
         width: 400px;
     }
-    span .icon.right {
+    span>.icon.right {
         display: inline-block;
         background-color: #ddd;
         font-size: 1.8em;
@@ -434,9 +434,9 @@ footer ul li a{
         background-color: #ddd;
         align-items: center;
     }
-    ul.navbar +li.responsive {
+    ul.navbar + li.responsive a {
         padding: 0.5em;
-        list-style-type: none;
+        display:block!important;
         justify-content: space-around;
     }
     ul.navbar+li.responsive has:a(:first-child) {
