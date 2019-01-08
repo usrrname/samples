@@ -15,8 +15,10 @@ button.addEventListener('click', (e) => {
 // colour bg end
 
 // toggle between responsive menu in smaller screens
+
+//global var
 const listItems= document.getElementById('menu').children;
-console.log(listItems);
+
 const noBootstrap = () => {
         const nav = listItems;
                 for (var i = 0; i < nav.length; i++) {
@@ -37,14 +39,14 @@ document.getElementById('email').style.display="block";
 
 // slide to menu item
 const link_array = [];
+
 const anchors = [];
 for (let i = 0; i < listItems.length; i++) { 
-       const anchor = listItems[i].firstChild.attributes[0].nodeValue;
+        const anchor = listItems[i].firstChild.attributes[0].nodeValue;
         link_array.push(anchor);
         listItems[i].addEventListener('click', (e) => {
-        //console.log(this.firstChild.attributes[0].nodeValue + ' clicked')
         e.preventDefault();
-        document.querySelector(this.firstChild.attributes[0].nodeValue).scrollIntoView({
+        document.querySelector(anchor).scrollIntoView({
         behavior: 'smooth',
         block: "start", 
         inline: "nearest"
