@@ -1,29 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Lato');
-/* css adapted from tachyons */
 * {
     box-sizing: border-box;
 }
-.preamble h4{ 
-    font-family: 'Lato', Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    line-height: 1.5;
-}
-h1, h2, h3, h4, h5, h6{
+
+body {
     font-family: "Lato", Arial, sans serif;
-}
-article{
-    margin-bottom: 2em;
-    width: 550px;
-}
-/* pointing finger icon */
-img.icon{
-    width: 30px;
-    padding: 0;
-    vertical-align: middle;
-    margin: 0.5em;
+    background: linear-gradient(180deg, #ddd 0%, #c198e2 51%, #9fa2d6 75%);
 }
 
-img.icon:hover {
+.preamble{ 
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+/* pointing finger icon */
+.finger{
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    vertical-align: middle;
+    margin: 0.4em;
+}
+
+.finger:hover {
 animation-name: spin;
 animation-duration: 1000ms;
 animation-iteration-count: infinite;
@@ -126,30 +124,10 @@ animation-timing-function: linear;
     }
 }
 
-form#email{
+#email{
     display: none;
 }
 
-form, input{
-    align-items: center;
-    display: block;
-    font-size: inherit;
-}
-
-form>button{
-    display: block;
-    font-size: inherit;
-    border-radius: 3px;
-}
-
-form>input, form>textarea{
-    max-width: 500px;
-    min-width: 400px;
-    margin: 0.5em;
-    font-size: initial;
-    border: 1px gray solid;
-    padding: 0.2em;
-}
 .cursor{
     width: 1em;
     height: 1em;
@@ -161,13 +139,6 @@ form>input, form>textarea{
     animation: 1s blink step-end infinite;
 }
 
-body {
-    width: 100%;
-    height: 100% cover!important;
-    background: linear-gradient(180deg, #ddd 0%, #c198e2 51%, #9fa2d6 75%);
-    padding: 0;
-    margin: 0;
-}
 .navbar {
     display: flex;
     flex-flow: row wrap;
@@ -253,30 +224,6 @@ ul.navbar li a:hover {
 ul.navbar li a:active {
     outline: 1px skyblue;
 }
-.b{
-    font-weight:bold;
-}
-.heading h3{
-    text-transform: capitalize;
-}
-.f5 {
-    font-size: 1rem;
-}
-.f6 {
-    font-size: .875rem;
-}
-p{
-    font-family: 'Lato',
-    sans-serif;
-    font-size: 1rem;
-    line-height: auto;
-}
-.lh-copy{
-line-height:1.5;
-}
-.lh-title{
-    line-height: 1.25;
-}
 .navbar li{
      list-style-type: none;
      font-family: "Montserrat",
@@ -284,60 +231,11 @@ line-height:1.5;
      sans-serif;
      font-weight: 300;
 }
-/* Measure is limited to ~66 characters */
-.measure {
-    max-width: 30em;
-}
-/* Measure is limited to ~80 characters */
-.measure-wide {
-    max-width: 34em;
-}
 #work>img{
     padding:0;
     width:100%;
     height:auto;
 }
-.pv2{
-    padding-top:0.5rem;
-    padding-bottom:0.5rem;
-}
-.ph2{
-      padding-left:0.5rem;
-      padding-right:0.5rem;
-}
-.ph3{
-   padding-left:1rem;
-   padding-right:1rem;
-}
-.f4-ns {
-    font-size: 1.25rem;
-}
-.right {
-    float: right;
-}   
-.pv3 {
-    padding-top:1rem;
-    padding-bottom:1rem;
-}
-.pa2{
-    padding:0.5rem;
-}
-.center{
-margin:auto;
-}
-.fl{
-    float:none;
-}
-.w-100 {
-    max-width:100%;
-}
-.db{
-    display:block;
-}
-.mb2{
-    margin-bottom:2em;
-}
-
 footer ul li a{
     font-family:"Ubuntu", Arial, Helvetica, sans-serif;
 }
@@ -366,15 +264,6 @@ footer ul li a{
         justify-items: center;
         font-size: 1.6em;
     }
-    .ph5-l {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-
-    .pv5-l {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
     footer ul li {
         display: flex;
         flex-flow: row wrap;
@@ -386,10 +275,6 @@ footer ul li a{
 }
 /* tablets and desktop */
 @media all and (max-width:768px){
-    .ph4-m{
-        padding-left:1rem;
-        padding-right:1rem;
-    }
     span.icon {
         display: none;
         text-decoration: none;
@@ -402,7 +287,7 @@ footer ul li a{
     img{
         width: 100%;
     }
-    span .icon {
+    span>.icon {
         display: none;
         position: absolute;
         vertical-align: middle;
@@ -420,7 +305,7 @@ footer ul li a{
         flex-flow: row wrap;
         list-style-type: none;
         justify-content: space-evenly;
-        align-items: baseline;
+        align-items: flex-start;
         font-size: 1em;
     }
 }

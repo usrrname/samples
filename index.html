@@ -3,13 +3,13 @@
 <head>
 <meta charset = "utf-8">
 <meta http-equiv = "X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name = "description" content = "some projects by a web developer based in toronto">
 <meta name = "keywords" content = "jen, chan, jennifer, toronto, web developer, development, front end, responsive, design, code, javascript, chicago, dorkbot, freelance, HTML, CSS">
 <meta name = "author" content = "jen chan">
 
 <title>Jen Chan - internet person </title>
-
+<link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/a786b53c9e.css">
 <link href="css/custom.css" rel="stylesheet" type="text/css">
 <link href="css/movingBg.css" rel="stylesheet" type="text/css">
@@ -18,48 +18,51 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-<body>
+<body class="w-100">
 <span>
     <a href="javascript:void(0);" class="icon right" style="color:gray;"onclick="noBootstrap()"><i id="hamburger" class="fa fa-bars" aria-hidden="true"></i></a>
 </span>
 <ul class="navbar" id="menu">
-<li><a href="#home" class="active"><span class="hover hover-3">updates</span></a></li>
-<li><a href="#work"><span class="hover hover-3">work</span></a></li>
+    <li><a href="#home" class="active"><span class="hover hover-3">updates</span></a></li>
+    <li><a href="#work"><span class="hover hover-3">work</span></a></li>
     <li><a href="#about"><span class="hover hover-3">about</span></a></li>
-<li><a href="#contact"><span class="hover hover-3">contact</span></a></li>
+    <li><a href="#contact"><span class="hover hover-3">contact</span></a></li>
 </ul> 
 </div>
 <div class = "fade-in fl w-100">
 <div id="moving-bg"></div>
-<div class="mt-3 mb-3">
+<div class="pa2 mt-3 mb-3">
 <span id="bgButton" role="button" class="button">&#9752;</span>
 </div>
-<div class="pa2 mt-3 mb-3">
-<div class="measure center f5 f4-ns ph4-m preamble">
-    <h4>Hello, my name is Jen. I'm a shapeshifter. People have told me I look or sound like someone they know.</h4>
+<div class="pa2 mt3 mb3">
+<div class="measure center ph4-l f3 f3-ns">
+    <div class="lh-copy preamble ">
+    
+       <p>Hello, my name is Jen. I'm a shapeshifter. People have told me I look or sound like someone they know.<br><br>
 
-    <h4>I look young but I know how to use a semicolon and keep a spreadsheet on my business expenses. I'm the type to use the Marie Kondo folding method. I give a shit about lots of things like climate change, suffering, history, animals, and line height. I'm an artist, writer, and developer; this website shows off my <a href="#work">dev skills</a></h2>
+        I look young but I know how to use a semicolon and keep a spreadsheet on my business expenses. I'm the type to use the Marie Kondo folding method. I give a shit about lots of things like climate change, suffering, history, animals, and line height. I'm an artist, writer, and developer; this website shows off my dev skills.<br><br>
 
-    <h4>I've been dabbling with dev since 2014. As an artist I was first really resistant to learning anything more rigourously technical but I soon got sucked into it as a means to a visual end. I got into coding somewhere between MySpace and making YouTube videos. Later on I taught creative code at art school. People invited me to speak at conferences and I have published in books.
-        That was fun, but I enjoyed the learning part more than teaching.</h4>
+        I've been dabbling with dev since 2014. As an artist I was first really resistant to learning anything more rigourously technical but I soon got sucked into it as a means to a visual end. I got into coding somewhere between MySpace and making YouTube videos. Later on I taught creative code at art school. People invited me to speak at conferences and I have published in books. That was fun, but I enjoyed the learning part more than teaching.<br><br>
 
-    <h4>I thought, "Why spend my waking hours cramming code to teach when I could just code all day?"</h4>
-
-    <h4>Since then I have worked in an office, as a consultant, at an agency, remotely, for a non-profit, and a software company. I have
-    interned, thrice. I've weathered many periods of un(der)employment. I know this is terrible for my branding; I'm giving you this self-destructively earnest preamble just to say: Like any millennial out there, I don't know what I'm doing or how far I'll go. But as a matter of principle when I'm talking about myself, I won't sugarcoat. My career hasn't gone as I had hoped, but every opportunity is a tremendous learning moment and I'm always going to try my best. I do what I love and I love what I do. :) </h4>
-
-    <h4 class="typewriter">Thanks for reading, <br>
-    Jen Chan<br>
-    01-07-2019</h4>
-    <p><a href="#contact"><img class="icon" src="https://img.icons8.com/ios/50/000000/hand-right.png">Get in Touch</a></p>
-    <p><a href="./resume/"><img class="icon" src="https://img.icons8.com/ios/50/000000/hand-right.png">Just show me your resume</a></p>
-    </div>
+        I thought, "Why spend my waking hours cramming code to teach when I could just code all day?"
+        <br><br>
+        Since then I have worked in an office, as a consultant, at an agency, remotely, for a non-profit, and a software company. I have
+        interned, thrice. I've weathered many periods of un(der)employment. I know this is terrible for my branding; I'm giving you this self-destructively earnest preamble just to say: Like any millennial out there, I don't know what I'm doing or how far I'll go. But as a matter of principle when I'm talking about myself, I won't sugarcoat. I do what I love and I love what I do. :) <br><br>
+        Thanks for reading!<br>
+        <span class="typewriter cursor mb3">01-07-2019</span>
+        </p>
+        <div class="mt3 mb3">
+        <p><a href="#contact"><img class="finger" src="https://img.icons8.com/ios/50/000000/hand-right.png">Get in Touch</a></p>
+        <p><a href="./resume/"><img class="finger" src="https://img.icons8.com/ios/50/000000/hand-right.png">Just show me your resume</a></p>
+        </div>
+    </div>    
 </div>
-<div class="pa2 mt-3 mb-3">
-<div class="measure center f5 f4-ns ph4-m">
-<h3 id="home" class="lh-title">Periodic Updates</h3>
-    <article class="lh-copy">
-                <p>Jan 2019: Branded content: Happy New Year gif for HyperAllergic</p>
+</div>
+<div class="pa2 mt3 mb3">
+<div class="measure center f5 f4-ns ph4-m pv4">
+<h3 id="home" class="heading lh-title">Periodic Updates</h3>
+    <article class="lh-copy pv2">
+                <p>Jan 2019: Wrote this blogpost asking devs <a href="https://dev.to/jenninat0r/what-should-production-css-look-like-share-your-layout-to-web-workflow-2d55" target="_blank">what production CSS should look like</a></p>
                 <p>Dec 2018: Landing page for <a href="http://benmccarthy.work/" target="_blank">Ben McCarthy</a>, who needed something in a pinch. Site to come.</p>
                 <p>Nov 2018: As part of a code challenge I made this <a href="https://usrrname.github.io/knockoff-slack/index.html" target="_blank">knock-off slack</a> interface with CSS grid and flexbox with slig</p>
                 <p>Oct 2018: <a href="http://ifcatsneed.art" target="_blank">If Cats Need Art</a> site launched along with <a href="https://itunes.apple.com/us/app/tiddl/id1435369864?mt=8" target="_blank">Tiddl</a>, 
@@ -78,23 +81,23 @@
             </article>
         </div>
     </div>
-</div>
-<div class="pa2 mt-3 mb-3">
-<div id="work" class="measure center f5 f4-ns ph4-m">
-<h3 class="lh-title">Work</h3>
-  <article>
-    <img class="db" src="img/zombie.png" alt="Screenshot of Zombie Solo Jazz webpage"/>
+<div class="pa2 mt3 mb3">
+<div class="measure center f5 f4-ns ph4-m">
+<h3 id="work" class="heading lh-title">Work</h3>
+  <article class="pv4">
+    <img class="db left" src="img/zombie.png" alt="Screenshot of Zombie Solo Jazz webpage"/>
     <p class="lh-copy">
-        <a href="https://usrrname.github.io/wallpaper/" target="_blank">Zombie Solo Jazz</a>, web page made with 3JS and Javascript. An animated wallpaper of randomized rotating party cups with rotating red ball inside, array vision camera snippet, and an identical crack on each rim, for New Forms Festival in Vancouver</p>
+        <a href="https://usrrname.github.io/wallpaper/" target="_blank">Zombie Solo Jazz</a>, web page made with 3JS and Javascript. An animated wallpaper of randomized rotating party cups with rotating red ball inside, array vision camera snippet, and an identical crack on each rim, for New Forms Festival in Vancouver
+    </p>
   </article>
-  <article>
-    <img class="db" src="img/theCarded3.png" alt="screenshot of third version of The Carded website">
+  <article class="pv4">
+    <img class="db left" src="img/theCarded3.png" alt="screenshot of third version of The Carded website">
     <p class="lh-copy">
         <a href="http://thecarded.ca" target="_blank">The Carded</a>. Landing page for a Civic Tech project. HTML and CSS, a single-page app made with AJAX and vanilla js.
     </p>
 </article>
-<article>
-    <img class="db" src="img/importantMen.png" alt="Landing page screenshot Important Men website">
+<article class="pv4">
+    <img class="db left" src="img/importantMen.png" alt="Landing page screenshot Important Men website">
     <p class="lh-copy">
         <a href="http://importantmen.com" target="_blank">Important Men</a> looks like a lifestyle
         website and modelling portfolio. Commissioned by IOTA and Canada Council for the
@@ -108,32 +111,32 @@
     <br>I blogged about <a href="https://dev.to/jenninat0r/what-i-learned-from-not-planning-a-web-app-from-start-to-finish-14a"
             target="_blank">what I learned</a> here.</p>
 </article>
-<article>
-    <img class="db" src="img/shirtify1.png" alt="Photo of parody menswear website.">
-    <img class="db" src="img/shirtify2.png" alt="Photo of parody menswear website.">
+<article class="pv4">
+    <img class="db left" src="img/shirtify1.png" alt="Photo of parody menswear website.">
+    <img class="db left" src="img/shirtify2.png" alt="Photo of parody menswear website.">
     <p class="lh-copy">
         <a href="https://github.com/usrrname/shopapp/tree/gh-pages" class="link b lightblue" target="_blank">Shirtify</a>, a parody menswear site
         built with Angular 1.x, MongoDB, photo upload, admin side, login with authentication.
     </p>
 </article>
-<article>
-    <img class="db" src="img/generalcomplaints.png" alt="a website full of the latest complaints from twitter">
+<article class="pv4">
+    <img class="db left" src="img/generalcomplaints.png" alt="a website full of the latest complaints from twitter">
     <p class="lh-copy"><a href="https://github.com/usrrname/complaints">General Complaints</a> uses
         Twitter API and some language filtering to return the most outraged and whiney popular tweets from the past day or
         the last seven days. It was made with Angular 1.x, Moment.JS, Express and Node.</p>
 </article>
-<article>
-    <img class="db" src="img/tiddl.png" alt="Screenshot of webpage" />
+<article class="pv4">
+    <img class="db left" src="img/tiddl.png" alt="Screenshot of webpage" />
         <p class="lh-copy"><a href="www.ifcatsneed.art" target="_blank">If Cats Need Art</a>, web page made
             with Vue-Cli and webpack, Express server endpoint sending JSON from Google Sheets, deployed on Nearly Free Speech. The site was made with the intention of including future design projects related to UX for domestic cats.
         </p>
 </article>
  </div> 
  </div>
-<div class="pa2 mt-3 mb-3">
+<div class="pa2 mt3 mb3">
 <div id="about" class="measure center f5 f4-ns ph4-m">
-<h3 class="lh-title">About</h3>
-    <article class="lh-copy"> 
+<h3 class="heading lh-title">About</h3>
+    <article class="pv4"> 
             <p class="lh-copy"> Artist turned dev. I like to prototype in code. Previously support engineer at at ReCollect and front end dev at Mirum. I live in Toronto. Available for remote or fulltime work. I'm a <a href="https://saic.academia.edu/JenniferChan" class="link b orange" target="_blank">former academic</a> and
                 <a href="https://vimeo.com/129512515" class="link b orange" target="_blank">event organizer</a>. I occasionally
                 <a href="http://asdfg.yelp.ca"
@@ -145,28 +148,30 @@
     </article>       
     </div>
 </div>
-<footer class="pa2 mt-3 mb-3">
-<div id='contact' class="measure center f5 f4-ns ph4-m">
-<h3 class="lh-title">Contact</h3>
-<article>
-<p>Annoyed? Interested? Hiring? Wanna discuss your favourite Pokemon?<br>
-    <p><a id="feedback" href="#email"><img class="icon" src="https://img.icons8.com/ios/50/000000/hand-right.png">Drop Me A Line</a></p>
-    <form id="email" class="fade fade-in mt-3 mb-3" method="POST" action="https://formspree.io/jennifer7chan@gmail.com">
-        <input type="email" name="email" placeholder="Your email">
-        <textarea name="message" placeholder="Type Your Message"></textarea>
-        <button type="submit">Send</button>
-    </form>
-</article>
-<ul class='f5 f4-ns lh-copy'>
-    <li><a href="http://github.com/usrrname" class="link orange" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> github</a></li>
-    <li><a href="https://medium.com/@jenninat0r" class="link orange" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i> medium</a></li>
-    <li><a class="link orange" href="https://stackoverflow.com/users/3394599/usrrname" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i> stack overflow</a></li>
-    <li><a href="https://dev.to/jenninat0r" class="link orange" target="_blank"><i class="fa fa-code" aria-hidden="true"></i> dev.to</a></li>
-    <li><a href="https://ca.linkedin.com/in/jennifer7chan" class="link orange" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> linkedIn</a></li>
-    <li><a href="http://paypal.me/instead" class="link pink" target="_blank"><i class="fa fa-credit-card" aria-hidden="true"></i> donate</a></li>
+<footer class="pa2 mt3 mb3">
+    <div id='contact' class="measure center f5 f4-ns ph4-m">
+        <h3 class="lh-title">Contact</h3>
+            <article>
+            <p class="lh-copy">Annoyed? Interested? Hiring? Wanna discuss your favourite Pokemon?<br>
+            <p><a id="feedback" href="#email"><img class="finger" src="https://img.icons8.com/ios/50/000000/hand-right.png">Drop Me A Line</a></p>
+
+                <form id="email" class="left fade fade-in" method="POST" action="https://formspree.io/jennifer7chan@gmail.com">
+                    <input class="db w-80 pa2 mt2" type="email" name="email" placeholder="Your email">
+                    <textarea name="message" class="db w-100 pa2 mt2" placeholder="Type Your Message"></textarea>
+                    <button type="submit" class="left db mt3 mb3">Send</button>
+                </form>
+            </article>
+    <ul class='f6 f4-ns mt5 mb4'>
+        <li><a href="http://github.com/usrrname" class="link orange" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> github</a></li>
+        <li><a href="https://medium.com/@jenninat0r" class="link orange" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i> medium</a></li>
+        <li><a class="link orange" href="https://stackoverflow.com/users/3394599/usrrname" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i> stack overflow</a></li>
+        <li><a href="https://dev.to/jenninat0r" class="link orange" target="_blank"><i class="fa fa-code" aria-hidden="true"></i> dev.to</a></li>
+        <li><a href="https://ca.linkedin.com/in/jennifer7chan" class="link orange" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> linkedIn</a></li>
+        <li><a href="http://paypal.me/instead" class="link pink" target="_blank"><i class="fa fa-credit-card" aria-hidden="true"></i> donate</a></li>
     </ul>
-  </div>
+    </div>
 </footer>
+</div>
 </div>
     <script src="js/menu.js"></script>
 </body>
