@@ -11,6 +11,11 @@
 h1, h2, h3, h4, h5, h6{
     font-family: "Lato", Arial, sans serif;
 }
+article{
+    margin-bottom: 2em;
+    width: 550px;
+}
+/* pointing finger icon */
 img.icon{
     width: 30px;
     padding: 0;
@@ -25,7 +30,15 @@ animation-iteration-count: infinite;
 animation-timing-function: linear;
 }
 
- @-ms-keyframes spin {
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(90deg);
+    }
+}
+@-ms-keyframes spin {
      from {
          -ms-transform: rotate(0deg);
      }
@@ -54,6 +67,7 @@ animation-timing-function: linear;
          -webkit-transform: rotate(90deg);
      }
     }
+
 @keyframes blink {
 
     from,
@@ -111,19 +125,23 @@ animation-timing-function: linear;
         color: black;
     }
 }
+
 form#email{
     display: none;
 }
+
 form, input{
     align-items: center;
     display: block;
     font-size: inherit;
 }
+
 form>button{
     display: block;
     font-size: inherit;
     border-radius: 3px;
 }
+
 form>input, form>textarea{
     max-width: 500px;
     min-width: 400px;
@@ -160,18 +178,22 @@ body {
     overflow: hidden;
     width: 100%;
 }
+
 a:link{
 text-decoration: none;
 color:#333366;
 }
+
 a:active{
     text-decoration:none;
     color: redorange;
 }
+
 a:hover {
     cursor:pointer;
     font-weight: bold;
 }
+
 .navbar li span {
     font-size: 1.2em;
     margin: 0;
@@ -179,6 +201,7 @@ a:hover {
     transition: all 0.2s ease-in-out;
     position: relative;
 }
+
 @media all and (min-width:992px){
     ul.navbar li:hover span:before,
     ul.navbar li:hover span:after {
@@ -253,7 +276,6 @@ line-height:1.5;
 }
 .lh-title{
     line-height: 1.25;
-    padding-left:0.5rem;
 }
 .navbar li{
      list-style-type: none;
@@ -270,10 +292,10 @@ line-height:1.5;
 .measure-wide {
     max-width: 34em;
 }
-img{
+#work>img{
+    padding:0;
     width:100%;
     height:auto;
-    padding: 0.5em;
 }
 .pv2{
     padding-top:0.5rem;
@@ -337,9 +359,6 @@ footer ul li a{
 
 /*  desktop */
 @media all and (min-width:1024px) {
-    img{
-        width: 650px;
-    }
     .navbar#menu {
         display:flex;
         flex-flow: row wrap;
@@ -359,7 +378,7 @@ footer ul li a{
     footer ul li {
         display: flex;
         flex-flow: row wrap;
-        align-items: flex-start;
+        align-items: stretch;
         width: 100%;
         padding: unset;
         list-style-type: none;
@@ -367,9 +386,6 @@ footer ul li a{
 }
 /* tablets and desktop */
 @media all and (max-width:768px){
-    img{
-        width: 600px;
-    }
     .ph4-m{
         padding-left:1rem;
         padding-right:1rem;
@@ -384,7 +400,7 @@ footer ul li a{
 /* medium screens */
 @media all and ( min-width: 601px) {
     img{
-        width: 500px;
+        width: 100%;
     }
     span .icon {
         display: none;
