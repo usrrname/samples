@@ -250,10 +250,6 @@ ul.navbar li a:active {
     height: auto;
 }
 
-footer {
-    text-align: center;
-}
-
 footer ul li a {
     font-family: "Ubuntu", Arial, Helvetica, sans-serif;
 }
@@ -294,6 +290,10 @@ footer ul li a {
         font-size: 1em;
         padding: 0.2em 0.5em 0.2em 0.5em;
         align-content: center;
+    }
+
+    footer {
+        text-align: center;
     }
 }
 
@@ -360,12 +360,10 @@ footer ul li a {
 
     ul.navbar {
         display: flex;
-        flex-flow: column nowrap;
         width: 100%;
         font-size: 1.85em;
         background-size: cover;
         background-color: #ddd;
-        align-items: center;
     }
 
     ul.navbar+li.responsive a {
@@ -383,5 +381,7 @@ footer ul li a {
         list-style-type: none;
         background-color: transparent;
         font-size: 1.5em;
+        flex-flow: column nowrap;
+        align-items: left;
     }
 }
