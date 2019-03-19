@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Lato');
+
 * {
     box-sizing: border-box;
 }
@@ -8,12 +9,12 @@ body {
     background: linear-gradient(180deg, #ddd 0%, #c198e2 51%, #9fa2d6 75%);
 }
 
-.preamble{ 
-    font-family: 'Lato', Arial, Helvetica, sans-serif;
+li {
+    list-style: none;
 }
 
 /* pointing finger icon */
-.finger{
+.finger {
     width: 30px;
     height: 30px;
     padding: 0;
@@ -22,49 +23,51 @@ body {
 }
 
 .finger:hover {
-animation-name: spin;
-animation-duration: 1000ms;
-animation-iteration-count: infinite;
-animation-timing-function: linear;
+    animation-name: spin;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 @keyframes spin {
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(90deg);
     }
 }
+
 @-ms-keyframes spin {
-     from {
-         -ms-transform: rotate(0deg);
-     }
-
-     to {
-         -ms-transform: rotate(90deg);
-     }
- }
-
- @-moz-keyframes spin {
-     from {
-         -moz-transform: rotate(0deg);
-     }
-
-     to {
-         -moz-transform: rotate(90deg);
-     }
- }
-
- @-webkit-keyframes spin {
-     from {
-         -webkit-transform: rotate(0deg);
-     }
-
-     to {
-         -webkit-transform: rotate(90deg);
-     }
+    from {
+        -ms-transform: rotate(0deg);
     }
+
+    to {
+        -ms-transform: rotate(90deg);
+    }
+}
+
+@-moz-keyframes spin {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+
+    to {
+        -moz-transform: rotate(90deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(90deg);
+    }
+}
 
 @keyframes blink {
 
@@ -77,6 +80,7 @@ animation-timing-function: linear;
         border-color: black;
     }
 }
+
 @-webkit-keyframes blink {
 
     from,
@@ -100,6 +104,7 @@ animation-timing-function: linear;
         border-color: black
     }
 }
+
 @-ms-keyframes blink {
 
     from,
@@ -124,11 +129,11 @@ animation-timing-function: linear;
     }
 }
 
-#email{
+#email {
     display: none;
 }
 
-.cursor{
+.cursor {
     width: 1em;
     height: 1em;
     border-right: 7px solid black;
@@ -150,18 +155,18 @@ animation-timing-function: linear;
     width: 100%;
 }
 
-a:link{
-text-decoration: none;
-color:#333366;
+a:link {
+    text-decoration: none;
+    color: #333366;
 }
 
-a:active{
-    text-decoration:none;
+a:active {
+    text-decoration: none;
     color: redorange;
 }
 
 a:hover {
-    cursor:pointer;
+    cursor: pointer;
     font-weight: bold;
 }
 
@@ -173,7 +178,8 @@ a:hover {
     position: relative;
 }
 
-@media all and (min-width:992px){
+@media all and (min-width:992px) {
+
     ul.navbar li:hover span:before,
     ul.navbar li:hover span:after {
         width: 100%;
@@ -184,6 +190,7 @@ a:hover {
     ul.navbar li:hover span.hover-3:after {
         width: 50%;
     }
+
     .navbar li span.hover::before,
     .navbar li span.hover::after {
         width: 100%;
@@ -209,42 +216,55 @@ a:hover {
         background-color: #ad6397;
     }
 }
-a:visited{
-    color:brown;
+
+a:visited {
+    color: brown;
 }
-a:focus{
-    padding:0.3rem;
-    outline:solid lightskyblue 2px;
+
+a:focus {
+    padding: 0.3rem;
+    outline: solid lightskyblue 2px;
 }
+
 ul.navbar li a:hover {
     text-shadow: #333 1px 1px 1px;
     color: blue;
     animation: ease-in 1.5s;
 }
+
 ul.navbar li a:active {
     outline: 1px skyblue;
 }
-.navbar li{
-     list-style-type: none;
-     font-family: "Montserrat",
-     Arial,
-     sans-serif;
-     font-weight: 300;
+
+.navbar li {
+    list-style-type: none;
+    font-family: "Montserrat",
+        Arial,
+        sans-serif;
+    font-weight: 300;
 }
-#work>img{
-    padding:0;
-    width:100%;
-    height:auto;
+
+#work>img {
+    padding: 0;
+    width: 100%;
+    height: auto;
 }
-footer ul li a{
-    font-family:"Ubuntu", Arial, Helvetica, sans-serif;
+
+footer {
+    text-align: center;
 }
+
+footer ul li a {
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+}
+
 /* fade transition */
 @keyframes fadeIn {
     to {
         opacity: 1;
     }
 }
+
 .fade-in {
     opacity: 0;
     animation: fadeIn .5s ease-in 1 forwards;
@@ -258,23 +278,27 @@ footer ul li a{
 /*  desktop */
 @media all and (min-width:1024px) {
     .navbar#menu {
-        display:flex;
+        display: flex;
         flex-flow: row wrap;
-        align-items: center;
+        align-items: flex-start;
         justify-items: center;
         font-size: 1.6em;
     }
-    footer ul li {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: stretch;
-        width: 100%;
-        padding: unset;
+
+    .footer__link {
+        display: inline-flex;
         list-style-type: none;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 1em;
+        padding: 0.2em 0.5em 0.2em 0.5em;
+        align-content: center;
     }
 }
+
 /* tablets and desktop */
-@media all and (max-width:768px){
+@media all and (max-width:768px) {
     span.icon {
         display: none;
         text-decoration: none;
@@ -282,17 +306,20 @@ footer ul li a{
         background-color: #333;
     }
 }
+
 /* medium screens */
-@media all and ( min-width: 601px) {
-    img{
+@media all and (min-width: 601px) {
+    img {
         width: 100%;
     }
+
     span>.icon {
         display: none;
         position: absolute;
         vertical-align: middle;
         overflow: hidden;
     }
+
     ul.navbar li {
         padding: 0.5em 0.8em;
         list-style-type: none;
@@ -300,55 +327,60 @@ footer ul li a{
         list-style-type: none;
         text-decoration: none;
     }
-    footer ul li {
-        display: flex;
+
+    .footer__link {
+        text-align: left;
+        align-items: center;
         flex-flow: row wrap;
         list-style-type: none;
         justify-content: space-evenly;
-        align-items: flex-start;
         font-size: 1em;
     }
 }
+
 /* smaller screens */
 @media all and (max-width: 600px) {
-    img{
+    img {
         width: 400px;
     }
+
     span>.icon.right {
         display: inline-block;
         background-color: #ddd;
         font-size: 1.8em;
         padding: 0.5em 1.5em;
-        margin-right:auto;
+        margin-right: auto;
         text-align: right;
         width: 100%;
     }
+
     ul.navbar li a {
         display: none;
     }
-    ul.navbar{
-        display:flex;
+
+    ul.navbar {
+        display: flex;
         flex-flow: column nowrap;
-        width:100%;
+        width: 100%;
         font-size: 1.85em;
         background-size: cover;
         background-color: #ddd;
         align-items: center;
     }
-    ul.navbar + li.responsive a {
+
+    ul.navbar+li.responsive a {
         padding: 0.5em;
-        display:block!important;
+        display: block !important;
         justify-content: space-around;
     }
+
     ul.navbar+li.responsive has:a(:first-child) {
         list-style-type: none;
         margin: 1.5em 0.8em;
     }
-    footer ul li{
-        display: flex;
-        flex-flow: column nowrap;
+
+    .footer__link {
         list-style-type: none;
-        align-items: center;
         background-color: transparent;
         font-size: 1.5em;
     }

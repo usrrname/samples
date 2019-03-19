@@ -1,178 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset = "utf-8">
-<meta http-equiv = "X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name = "description" content = "some projects by a web developer based in toronto">
-<meta name = "keywords" content = "jen, chan, jennifer, toronto, web developer, development, front end, responsive, design, code, javascript, chicago, dorkbot, freelance, HTML, CSS">
-<meta name = "author" content = "jen chan">
 
-<title>Jen Chan - internet person </title>
-<link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/a786b53c9e.css">
-<link href="css/custom.css" rel="stylesheet" type="text/css">
-<link href="css/movingBg.css" rel="stylesheet" type="text/css">
-<!--[if lt IE 9]>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="some projects by a web developer based in toronto">
+    <meta name="keywords" content="jen, chan, jennifer, toronto, web developer, development, front end, responsive, design, code, javascript, chicago, dorkbot, freelance, HTML, CSS">
+    <meta name="author" content="jen chan">
+
+    <title>Jen Chan - internet person </title>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/a786b53c9e.css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <link href="css/movingBg.css" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-<body class="w-100">
-<span>
-    <a href="javascript:void(0);" class="icon right" style="color:gray;"onclick="noBootstrap()"><i id="hamburger" class="fa fa-bars" aria-hidden="true"></i></a>
-</span>
-<ul class="navbar" id="menu">
-    <li><a href="#home" class="active"><span class="hover hover-3">updates</span></a></li>
-    <li><a href="#work"><span class="hover hover-3">work</span></a></li>
-    <li><a href="#about"><span class="hover hover-3">about</span></a></li>
-    <li><a href="#contact"><span class="hover hover-3">contact</span></a></li>
-</ul> 
-</div>
-<div class = "fade-in fl w-100">
-<div id="moving-bg"></div>
-<div class="pa2 mt-3 mb-3">
-<span id="bgButton" role="button" class="button">&#9752;</span>
-</div>
-<div class="pa2 mt3 mb3">
-<div class="measure center ph4-l f3 f3-ns">
-    <div class="lh-copy preamble ">
-    
-       <p>Hello, my name is Jen. I'm a shapeshifter. People have told me I look or sound like someone they know.<br><br>
 
-        I look young but I know how to use a semicolon and keep a spreadsheet on my business expenses. I'm the type to use the Marie Kondo folding method. I give a shit about lots of things like climate change, suffering, history, animals, and line height. I'm an artist, writer, and developer; this website shows off my dev skills.<br><br>
-
-        I've been dabbling with dev since 2014. As an artist I was first really resistant to learning anything more rigourously technical but I soon got sucked into it as a means to a visual end. I got into coding somewhere between MySpace and making YouTube videos. Later on I taught creative code at art school. People invited me to speak at conferences and I have published in books. That was fun, but I enjoyed the learning part more than teaching.<br><br>
-
-        I thought, "Why spend my waking hours cramming code to teach when I could just code all day?"
-        <br><br>
-        Since then I have worked in an office, as a consultant, at an agency, remotely, for a non-profit, and a software company. I have
-        interned, thrice. I've weathered many periods of un(der)employment. I know this is terrible for my branding; I'm giving you this self-destructively earnest preamble just to say: Like any millennial out there, I don't know what I'm doing or how far I'll go. But as a matter of principle when I'm talking about myself, I won't sugarcoat. I do what I love and I love what I do. :) <br><br>
-        Thanks for reading!<br>
-        <span class="typewriter cursor mb3">01-07-2019</span>
-        </p>
-        <div class="mt3 mb3">
-        <p><a href="#contact"><img class="finger" src="https://img.icons8.com/ios/50/000000/hand-right.png">Get in Touch</a></p>
-        <p><a href="./resume/"><img class="finger" src="https://img.icons8.com/ios/50/000000/hand-right.png">Just show me your resume</a></p>
+<body>
+    <div class="fade-in fl w-100 h-100">
+        <div id="moving-bg"></div>
+        <div class="pa2 mt3 mb3">
+            <span id="bgButton" role="button" class="button">&#9752;</span>
+            <span class="di" role="button"><a href="./resume/"><img class="finger" src="https://img.icons8.com/ios/50/000000/hand-right.png">Resume</a></span>
         </div>
-    </div>    
-</div>
-</div>
-<div class="pa2 mt3 mb3">
-<div class="measure center f5 f4-ns ph4-m pv4">
-<h3 id="home" class="heading lh-title">Periodic Updates</h3>
-    <article class="lh-copy pv2">
-                <p>Jan 2019: Wrote this blogpost asking devs <a href="https://dev.to/jenninat0r/what-should-production-css-look-like-share-your-layout-to-web-workflow-2d55" target="_blank">what production CSS should look like</a></p>
-                <p>Dec 2018: Landing page for <a href="http://benmccarthy.work/" target="_blank">Ben McCarthy</a>, who needed something in a pinch. Site to come.</p>
-                <p>Nov 2018: As part of a code challenge I made this <a href="https://usrrname.github.io/knockoff-slack/index.html" target="_blank">knock-off slack</a> interface with CSS grid and flexbox with slig</p>
-                <p>Oct 2018: <a href="http://ifcatsneed.art" target="_blank">If Cats Need Art</a> site launched along with <a href="https://itunes.apple.com/us/app/tiddl/id1435369864?mt=8" target="_blank">Tiddl</a>, 
-                    a sound sampler app for cats and cat owners. We debuted our wee product at an exhibition in Montreal!</p>
-                    <img class="db w-100" src="img/ifcats.png">
-                <p>May 2018: <a href="https://thecarded.ca">The Carded.ca</a> relaunched</p>
-                <p>Jan 2018: wrote <a href="https://codepen.io/usrrname/pen/mpqjMB">a little rent splitter</a></p>
-                <p>Dec 2017: I blogged about (not) planning a <a href="https://dev.to/jenninat0r/what-i-learned-from-not-planning-a-web-app-from-start-to-finish-14a"
-                target="_blank">web app</a>.</p>
-                <p>Nov 2017: I helped with R&amp;D for Trinity Square Video's
-                <a href="http://www.trinitysquarevideo.com/exhibition-vart-projects/" target="_blank" >VR art app</a> and
-                <a href="https://www.theglobeandmail.com/arts/art-and-architecture/venturing-into-the-virtual-world-with-a-new-artapp/article37066961/" target="_blank">
-                we got press</a>.</p>
-                <p class="f6 center f5-ns">This site was created with tachyons.</p>
-             </p>
-            </article>
+        <div class="pa2 mt3 mb3">
+            <div class="measure-wide center">
+                <div class="lh-copy bb-1 ">
+                    <div class="pa3 tc">
+                        <img src="img/coffee.jpg" class="br-100 h4 w4 di" alt="avatar">
+                    </div>
+                    <p class="f2">Hello, my name is Jen Chan. </p>
+                    <p class="f2">Not to be confused with this <a href="https://marsdd.com/bio/jennifer-chan/" target="_blank">Jen</a>,
+                        this <a href="http://www.hollywood.com/general/jennifer-chan-60179412/">Jen</a> nor this <a
+                            href="https://en.wikipedia.org/wiki/Jennifer_Tilly" target="_blank">Jen</a>.</p>
+                    <p class="f2">I live in Toronto and I like to make websites. <br><br>
+                        <span class="typewriter cursor mb3">How can I help you?</span>
+                    </p>
+                    <div class="mt3">
+                        <p class="f5 f4-ns">Some cool articles featuring projects I worked on:</p>
+                        <ul class="left f6">
+                            <li class="link"><a href="https://www.theglobeandmail.com/arts/art-and-architecture/venturing-into-the-virtual-world-with-a-new-artapp/article37066961/">"Venturing
+                                    into the Virtual World"</a> by Chris Hampton, Globe and Mail, 2017.</li>
+                            <li class="link"><a href="https://www.artlog.net/en/art/jennifer-chan-important-men-2017">Jennifer
+                                    Chan,
+                                    Important Men, 2017</a> by Raffaele Dorig | Artlog. March 2019</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
+        <footer class="pa3 mt3 mb3">
+            <ul class='f5'>
+                <li class="footer__link"><a href="http://github.com/usrrname" class="link orange" target="_blank"><i
+                            class="fa fa-github" aria-hidden="true"></i> github</a></li>
+                <li class="footer__link"><a href="https://medium.com/@jenninat0r" class="link orange" target="_blank"><i
+                            class="fa fa-medium" aria-hidden="true"></i> medium</a></li>
+                <li class="footer__link"><a class="link orange" href="https://stackoverflow.com/users/3394599/usrrname"
+                        target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i> stack overflow</a></li>
+                <li class="footer__link"><a href="https://dev.to/jenninat0r" class="link orange" target="_blank"><i
+                            class="fa fa-code" aria-hidden="true"></i> dev.to</a></li>
+                <li class="footer__link"><a href="https://ca.linkedin.com/in/jennifer7chan" class="link orange" target="_blank"><i
+                            class="fa fa-linkedin" aria-hidden="true"></i> linkedIn</a></li>
+                <li class="footer__link"><a href="http://paypal.me/instead" class="link pink" target="_blank"><i class="fa fa-credit-card"
+                            aria-hidden="true"></i> donate</a></li>
+            </ul>
+        </footer>
+        <script src="js/shamrock.js"></script>
     </div>
-<div class="pa2 mt3 mb3">
-<div class="measure center f5 f4-ns ph4-m">
-<h3 id="work" class="heading lh-title">Work</h3>
-  <article class="pv4">
-    <img class="db left" src="img/zombie.png" alt="Screenshot of Zombie Solo Jazz webpage"/>
-    <p class="lh-copy">
-        <a href="https://usrrname.github.io/wallpaper/" target="_blank">Zombie Solo Jazz</a>, web page made with 3JS and Javascript. An animated wallpaper of randomized rotating party cups with rotating red ball inside, array vision camera snippet, and an identical crack on each rim, for New Forms Festival in Vancouver
-    </p>
-  </article>
-  <article class="pv4">
-    <img class="db left" src="img/theCarded3.png" alt="screenshot of third version of The Carded website">
-    <p class="lh-copy">
-        <a href="http://thecarded.ca" target="_blank">The Carded</a>. Landing page for a Civic Tech project. HTML and CSS, a single-page app made with AJAX and vanilla js.
-    </p>
-</article>
-<article class="pv4">
-    <img class="db left" src="img/importantMen.png" alt="Landing page screenshot Important Men website">
-    <p class="lh-copy">
-        <a href="http://importantmen.com" target="_blank">Important Men</a> looks like a lifestyle
-        website and modelling portfolio. Commissioned by IOTA and Canada Council for the
-        Arts. Inspired by her recent work in digital advertising and different online initiatives to reform "toxic
-        masculinity",
-        I wanted to create my own series of male portraiture by photographing the important masculine influences in my
-        life.
-        Built with Node, Express, MongoDB and sendgrid API for sending an email with form input to the "agony aunty"
-        Matthew's inbox. Email includes form which allows Matthew to respond. Both question and answer are stored on
-        MLab/MongoDB's sandbox. Backend on Heroku (free tier), front end on github pages. Some attempt at ES6.
-    <br>I blogged about <a href="https://dev.to/jenninat0r/what-i-learned-from-not-planning-a-web-app-from-start-to-finish-14a"
-            target="_blank">what I learned</a> here.</p>
-</article>
-<article class="pv4">
-    <img class="db left" src="img/shirtify1.png" alt="Photo of parody menswear website.">
-    <img class="db left" src="img/shirtify2.png" alt="Photo of parody menswear website.">
-    <p class="lh-copy">
-        <a href="https://github.com/usrrname/shopapp/tree/gh-pages" class="link b lightblue" target="_blank">Shirtify</a>, a parody menswear site
-        built with Angular 1.x, MongoDB, photo upload, admin side, login with authentication.
-    </p>
-</article>
-<article class="pv4">
-    <img class="db left" src="img/generalcomplaints.png" alt="a website full of the latest complaints from twitter">
-    <p class="lh-copy"><a href="https://github.com/usrrname/complaints">General Complaints</a> uses
-        Twitter API and some language filtering to return the most outraged and whiney popular tweets from the past day or
-        the last seven days. It was made with Angular 1.x, Moment.JS, Express and Node.</p>
-</article>
-<article class="pv4">
-    <img class="db left" src="img/tiddl.png" alt="Screenshot of webpage" />
-        <p class="lh-copy"><a href="www.ifcatsneed.art" target="_blank">If Cats Need Art</a>, web page made
-            with Vue-Cli and webpack, Express server endpoint sending JSON from Google Sheets, deployed on Nearly Free Speech. The site was made with the intention of including future design projects related to UX for domestic cats.
-        </p>
-</article>
- </div> 
- </div>
-<div class="pa2 mt3 mb3">
-<div id="about" class="measure center f5 f4-ns ph4-m">
-<h3 class="heading lh-title">About</h3>
-    <article class="pv4"> 
-            <p class="lh-copy"> Artist turned dev. I like to prototype in code. Previously support engineer at at ReCollect and front end dev at Mirum. I live in Toronto. Available for remote or fulltime work. I'm a <a href="https://saic.academia.edu/JenniferChan" class="link b orange" target="_blank">former academic</a> and
-                <a href="https://vimeo.com/129512515" class="link b orange" target="_blank">event organizer</a>. I occasionally
-                <a href="http://asdfg.yelp.ca"
-                    class="link b orange" target="_blank">review</a> fancy foods that I can't afford. Years ago some very generous people made a wikipedia
-                artist
-                <a href="https://en.wikipedia.org/wiki/Jennifer_Chan_(artist)" target="_blank">page</a> of me.</p>
-                <p class="lh-copy">Here's my <a href="./resume/" target="_blank">resumé</a>
-            </p>
-    </article>       
-    </div>
-</div>
-<footer class="pa2 mt3 mb3">
-    <div id='contact' class="measure center f5 f4-ns ph4-m">
-        <h3 class="lh-title">Contact</h3>
-            <article>
-            <p class="lh-copy">Annoyed? Interested? Hiring? Wanna discuss your favourite Pokemon?<br>
-            <p><a id="feedback" href="#email"><img class="finger" src="https://img.icons8.com/ios/50/000000/hand-right.png">Drop Me A Line</a></p>
-
-                <form id="email" class="left fade fade-in" method="POST" action="https://formspree.io/jennifer7chan@gmail.com">
-                    <input class="db w-80 pa2 mt2" type="email" name="email" placeholder="Your email">
-                    <textarea name="message" class="db w-100 pa2 mt2" placeholder="Type Your Message"></textarea>
-                    <button type="submit" class="left db mt3 mb3">Send</button>
-                </form>
-            </article>
-    <ul class='f6 f4-ns mt5 mb4'>
-        <li><a href="http://github.com/usrrname" class="link orange" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> github</a></li>
-        <li><a href="https://medium.com/@jenninat0r" class="link orange" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i> medium</a></li>
-        <li><a class="link orange" href="https://stackoverflow.com/users/3394599/usrrname" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i> stack overflow</a></li>
-        <li><a href="https://dev.to/jenninat0r" class="link orange" target="_blank"><i class="fa fa-code" aria-hidden="true"></i> dev.to</a></li>
-        <li><a href="https://ca.linkedin.com/in/jennifer7chan" class="link orange" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> linkedIn</a></li>
-        <li><a href="http://paypal.me/instead" class="link pink" target="_blank"><i class="fa fa-credit-card" aria-hidden="true"></i> donate</a></li>
-    </ul>
-    </div>
-</footer>
-</div>
-</div>
-    <script src="js/menu.js"></script>
 </body>
+
 </html>
