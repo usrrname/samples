@@ -222,7 +222,7 @@ a:visited {
 }
 
 a:focus {
-	padding: 0.3rem;
+	border-radius: 2px;
 	outline: solid lightskyblue 2px;
 }
 
