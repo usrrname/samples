@@ -1,76 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta
+			name="description"
+			content="some projects by a web developer based in toronto"
+		/>
+		<meta
+			name="keywords"
+			content="jen, chan, jennifer, toronto, web developer, development, front end, responsive, design, code, javascript, chicago, dorkbot, freelance, HTML, CSS"
+		/>
+		<meta name="author" content="jen chan" />
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="some projects by a web developer based in toronto">
-    <meta name="keywords" content="jen, chan, jennifer, toronto, web developer, development, front end, responsive, design, code, javascript, chicago, dorkbot, freelance, HTML, CSS">
-    <meta name="author" content="jen chan">
+		<title>Jen Chan - internet person</title>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/tachyons/css/tachyons.min.css"
+		/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/a786b53c9e.css" />
+		<link href="css/custom.css" rel="stylesheet" type="text/css" />
+		<link href="css/movingBg.css" rel="stylesheet" type="text/css" />
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
 
-    <title>Jen Chan - internet person </title>
-    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/a786b53c9e.css">
-    <link href="css/custom.css" rel="stylesheet" type="text/css">
-    <link href="css/movingBg.css" rel="stylesheet" type="text/css">
-    <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
-</head>
-
-<body>
-    <div class="fade-in fl w-100 h-100">
-        <div id="moving-bg"></div>
-        <div class="pa2 mt3 mb3">
-            <span id="bgButton" role="button" class="button">&#9752;</span>
-            <span class="di" role="button"><a href="./resume/"><img class="finger" src="https://img.icons8.com/ios/50/000000/hand-right.png">Resume</a></span>
-        </div>
-        <div class="pa2 mt3 mb3">
-            <div class="measure-wide center">
-                <div class="lh-copy bb-1 ">
-                    <div class="pa3 tc">
-                        <img src="img/coffee.jpg" class="br-100 h4 w4 di" alt="avatar">
-                    </div>
-                    <p class="f2">Hello, my name is Jen Chan. </p>
-                    <p class="f2">Not to be confused with this <a href="https://marsdd.com/bio/jennifer-chan/" target="_blank">Jen</a>,
-                        this <a href="http://www.hollywood.com/general/jennifer-chan-60179412/">Jen</a> nor this <a
-                            href="https://en.wikipedia.org/wiki/Jennifer_Tilly" target="_blank">Jen</a>.</p>
-                    <p class="f2">I live in Toronto and I like to make websites. <br><br>
-                        <span class="typewriter cursor mb3">How can I help you?</span>
-                    </p>
-                    <div class="mt3">
-                        <p class="f5 f4-ns">Some cool articles featuring projects I worked on:</p>
-                        <ul class="left f6">
-                            <li class="link"><a href="https://www.theglobeandmail.com/arts/art-and-architecture/venturing-into-the-virtual-world-with-a-new-artapp/article37066961/">"Venturing
-                                    into the Virtual World"</a> by Chris Hampton, Globe and Mail, 2017.</li>
-                            <li class="link"><a href="https://www.artlog.net/en/art/jennifer-chan-important-men-2017">Jennifer
-                                    Chan,
-                                    Important Men, 2017</a> by Raffaele Dorig | Artlog. March 2019</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <footer class="pa3 mt3 mb3">
-            <ul class='f5'>
-                <li class="footer__link"><a href="http://github.com/usrrname" class="link orange" target="_blank"><i
-                            class="fa fa-github" aria-hidden="true"></i> github</a></li>
-                <li class="footer__link"><a href="https://medium.com/@jenninat0r" class="link orange" target="_blank"><i
-                            class="fa fa-medium" aria-hidden="true"></i> medium</a></li>
-                <li class="footer__link"><a class="link orange" href="https://stackoverflow.com/users/3394599/usrrname"
-                        target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i> stack overflow</a></li>
-                <li class="footer__link"><a href="https://dev.to/jenninat0r" class="link orange" target="_blank"><i
-                            class="fa fa-code" aria-hidden="true"></i> dev.to</a></li>
-                <li class="footer__link"><a href="https://ca.linkedin.com/in/jennifer7chan" class="link orange" target="_blank"><i
-                            class="fa fa-linkedin" aria-hidden="true"></i> linkedIn</a></li>
-                <li class="footer__link"><a href="http://paypal.me/instead" class="link pink" target="_blank"><i class="fa fa-credit-card"
-                            aria-hidden="true"></i> donate</a></li>
-            </ul>
-        </footer>
-        <script src="js/shamrock.js"></script>
-    </div>
-</body>
-
+	<body>
+		<div class="fade-in fl w-100 h-100">
+			<div id="moving-bg"></div>
+			<div class="pa2 mt3 mb3">
+				<span id="bgButton" role="button" class="button">&#9752;</span>
+				<span class="di finger" role="button"
+					><a href="./resume/"
+						><img
+							class="finger"
+							src="https://img.icons8.com/ios/50/000000/hand-right.png"
+						/>Resume</a
+					></span
+				>
+			</div>
+			<div class="pa2 mt3 mb3">
+				<div class="measure-wide center">
+					<div class="lh-copy bb-1 ">
+						<div class="pa3 tc">
+							<img
+								src="https://media.licdn.com/dms/image/C5603AQFYtP9tLwikuA/profile-displayphoto-shrink_200_200/0?e=1577318400&v=beta&t=HQlQtyNZNkVHs6xXwrCpOKcJaFEbFOPr-jAy79lLKQI"
+								class="br-100 h4 w4 di"
+								alt="avatar"
+							/>
+						</div>
+						<p class="f2">Hello, my name is Jen Chan.</p>
+						<p class="f2">
+							Not to be confused with this
+							<a href="https://marsdd.com/bio/jennifer-chan/" target="_blank"
+								>Jen</a
+							>, this
+							<a href="http://www.hollywood.com/general/jennifer-chan-60179412/"
+								>Jen</a
+							>
+							nor this
+							<a
+								href="https://en.wikipedia.org/wiki/Jennifer_Tilly"
+								target="_blank"
+								>Jen</a
+							>.
+						</p>
+						<p class="f2">
+							I live in Toronto and I like to make websites. <br /><br />
+							<span class="typewriter cursor mb3">How can I help you?</span>
+						</p>
+						<div class="mt3">
+							<p class="f5 f4-ns">
+								Some cool articles featuring projects I worked on:
+							</p>
+							<ul class="left f6">
+								<li class="link">
+									<a
+										href="https://dribbble.com/shots/6766381-Adjust-Portfolio-Allocation"
+										>Adjust Portfolio Allocation</a
+									>
+									and
+									<a href="https://dribbble.com/shots/6683960-Search">Search</a>
+									features for Capintel, with designs by Niclas Erst at Fintory.
+									2019
+								</li>
+								<li class="link">
+									<a
+										href="https://www.theglobeandmail.com/arts/art-and-architecture/venturing-into-the-virtual-world-with-a-new-artapp/article37066961/"
+										>"Venturing into the Virtual World"</a
+									>
+									by Chris Hampton, Globe and Mail, 2017.
+								</li>
+								<li class="link">
+									<a
+										href="https://www.artlog.net/en/art/jennifer-chan-important-men-2017"
+										>Jennifer Chan, Important Men, 2017</a
+									>
+									by Raffaele Dorig | Artlog. March 2019
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="pa3 mt3 mb3">
+				<ul class="f5">
+					<li class="footer__link">
+						<a
+							href="http://github.com/usrrname"
+							class="link orange"
+							target="_blank"
+							><i class="fa fa-github" aria-hidden="true"></i> github</a
+						>
+					</li>
+					<li class="footer__link">
+						<a
+							href="https://medium.com/@jenninat0r"
+							class="link orange"
+							target="_blank"
+							><i class="fa fa-medium" aria-hidden="true"></i> medium</a
+						>
+					</li>
+					<li class="footer__link">
+						<a
+							class="link orange"
+							href="https://stackoverflow.com/users/3394599/usrrname"
+							target="_blank"
+							><i class="fa fa-stack-overflow" aria-hidden="true"></i> stack
+							overflow</a
+						>
+					</li>
+					<li class="footer__link">
+						<a
+							href="https://dev.to/jenninat0r"
+							class="link orange"
+							target="_blank"
+							><i class="fa fa-code" aria-hidden="true"></i> dev.to</a
+						>
+					</li>
+					<li class="footer__link">
+						<a
+							href="https://ca.linkedin.com/in/jennifer7chan"
+							class="link orange"
+							target="_blank"
+							><i class="fa fa-linkedin" aria-hidden="true"></i> linkedIn</a
+						>
+					</li>
+					<li class="footer__link">
+						<a href="http://paypal.me/instead" class="link pink" target="_blank"
+							><i class="fa fa-credit-card" aria-hidden="true"></i> donate</a
+						>
+					</li>
+				</ul>
+			</footer>
+			<script src="js/shamrock.js"></script>
+		</div>
+	</body>
 </html>
