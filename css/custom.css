@@ -16,9 +16,6 @@ li {
 .wrapper {
 	padding: 1.5em;
 }
-.skills ul {
-	padding-top: 1em;
-}
 
 /* pointing finger icon */
 .finger {
@@ -318,7 +315,6 @@ footer ul li a {
 	}
 
 	ul.navbar li {
-		padding: 0.5em 0.8em;
 		list-style-type: none;
 		font-size: medium;
 		list-style-type: none;
