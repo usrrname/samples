@@ -5,28 +5,72 @@
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="reset.css" />
-		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/tachyons/css/tachyons.min.css"
+		/>
+		<link rel="stylesheet" href="custom.css" />
 	</head>
 
 	<body class="container">
-		<header>
-			<h3>Jen Chan</h3>
-			<p>
-				web developer// based in Toronto //
-				<a href="https://jenchan.biz">jenchan.biz</a>
-			</p>
+		<header class="wrapper">
+			<div>
+				<h3>Jen Chan</h3>
+				<p>
+					UI/UX developer based in Toronto //
+					<a href="https://jenchan.biz">jenchan.biz</a>
+				</p>
 
-			<h3><a href="./JChan_resume.pdf" target="_blank">Download PDF</a></h3>
+				<a href="./JChan_resume.pdf" target="_blank">Download PDF</a>
+			</div>
+
+			<ul class="icons">
+				<li>
+					<a href="http://github.com/usrrname" target="_blank">
+						<img class="box fade" src="octocat.png" />
+					</a>
+				</li>
+				<li>
+					<a
+						href="https://stackoverflow.com/users/3394599/usrrname"
+						target="_blank"
+					>
+						<img class="box fade" src="stackoverflow.png" />
+					</a>
+				</li>
+				<li>
+					<a href="https://dev.to/jenninat0r" target="_blank">
+						<img class="box fade" src="devTO.png" />
+					</a>
+				</li>
+			</ul>
 		</header>
 		<main>
-			<div>
-				<h4>RELEVANT EXPERIENCE</h4>
+			<div class="wrapper">
 				<section>
-					<h3>Solutions and UX Developer, SmileCDR 2019-Present</h3>
+					<h3>RELEVANT EXPERIENCE</h3>
 				</section>
 				<section>
-					<h3>Software Engineer, CapIntel, 2019</h3>
+					<h4>UX Developer, Smile CDR, 2019-Present</h4>
+					<br />
+					<ul>
+						<li>
+							Built web applications using HL7 FHIR API, Typescript, Angular,
+							SCSS
+						</li>
+						<li>
+							Led design sprints for development of white-label MVP, reduced
+							design iterations from 20 to 3.
+						</li>
+						<li>Implemented style guides and enforced design consistency</li>
+						<li>
+							Screening and recruitment of UX talent, contributed documentation
+							for onboarding over 8 team members
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h4>Software Engineer, CapIntel, 2019</h4>
 					<br />
 					<ul>
 						<li>
@@ -45,7 +89,7 @@
 					</ul>
 				</section>
 				<section>
-					<h3>Support Engineer, ReCollect (remote), 2018</h3>
+					<h4>Support Engineer, ReCollect (remote), 2018</h4>
 					<br />
 					<ul>
 						<li>Tech support for 300 municipalities and their end users</li>
@@ -57,9 +101,7 @@
 							Generated metric reports with PostgreSQL, Form integration with
 							SeeClickFix API, GIS data imports with FME Workbench.
 						</li>
-						<li>
-							Wrote tech documentation that onboarded 5 team members
-						</li>
+						<li>Wrote tech documentation that onboarded 5 team members</li>
 						<li>
 							Bug triage and reproduction on SauceLabs, LogDNA, Pivotal Tracker.
 							Dev environment on Docker, tmux, vim.
@@ -67,7 +109,7 @@
 					</ul>
 				</section>
 				<section>
-					<h3>Front End Developer, Mirum, 2016 – 2017</h3>
+					<h4>Front End Developer, Mirum, 2016 – 2017</h4>
 					<br />
 					<ul>
 						<li>
@@ -85,9 +127,7 @@
 					</ul>
 				</section>
 				<section>
-					<h3>
-						App Development Consultant, Trinity Square Video, 2017 – 2018
-					</h3>
+					<h4>App Development Consultant, Trinity Square Video, 2017 – 2018</h4>
 					<br />
 					<ul>
 						<li>
@@ -120,9 +160,7 @@
 					</ul>
 				</section>
 				<section>
-					<h3>
-						Lecturer, School of Art Institute Chicago, 2013 – 2015
-					</h3>
+					<h4>Lecturer, School of Art Institute Chicago, 2013 – 2015</h4>
 					<br />
 					<ul>
 						<li>
@@ -133,7 +171,7 @@
 				</section>
 			</div>
 			<div class="wrapper">
-				<h3>EDUCATION</h3>
+				<section><h3>EDUCATION</h3></section>
 				<section>
 					<ul>
 						<li>Web Development Diploma, 2016</li>
@@ -151,49 +189,53 @@
 			</div>
 		</main>
 		<aside>
-			<section class="skills">
-				<h3>
-					<img class="icon" src="noun_html_794157.png" width="20" />
-					SKILLS
-				</h3>
-				<br />
+			<section>
+				<h3 class="mt2">SKILLS</h3>
+			</section>
+			<section>
 				<ul>
-					<h3>PRODUCTION EXPERIENCE</h3>
-					<li>
-						HTML, CSS, SASS, Javascript (ES5, ES6), React, Redux, Typescript,
-						Express, Node, Git, Github, Bitbucket, JIRA, Rollbar
-					</li>
+					<h4>PRODUCTION EXPERIENCE</h4>
+					<br />
+					<p>
+						HTML, CSS, SASS, Javascript, Angular 2+, React, Redux, Typescript,
+						Express, Node, Git
+					</p>
 				</ul>
 				<br />
-				<ul class="mt1">
-					<h3>WORKING KNOWLEDGE</h3>
-					<li>
+				<ul>
+					<h4>WORKING KNOWLEDGE</h4>
+					<br />
+					<p>
 						Command Line, PostgreSQL, MongoDB, REST API, VueJS, Angular-cli,
-						Angular 1.x, AWS storage, Heroku, LogDNA, Vim
-					</li>
+						Angular 1.x, AWS storage, Heroku, LogDNA, Vim, JIRA, Rollbar
+					</p>
 				</ul>
 				<br />
 				<ul>
-					<h3>TOOLS AND SOFTWARE</h3>
-					<h4>CREATIVE</h4>
-					<li>
+					<h4>TOOLS AND SOFTWARE</h4>
+					<br />
+					<h5>CREATIVE</h5>
+					<br />
+					<p>
 						Photoshop, Illustrator, Illustrator, InDesign, Premiere. InVision,
 						Sketch
-					</li>
+					</p>
 					<br />
-					<h4>DEV ENVIRONMENT</h4>
-					<li>
-						MacOS, Sourcetree, npm, Terminal, Postman, MongoHub, mLab, Chrome
-						DevTools, Visual Studio Code
-					</li>
+					<h5>DEV ENVIRONMENT</h5>
+					<br />
+					<p>
+						MacOS, Sourcetree, npm, Terminal, Postman, MongoHub, Chrome
+						DevTools, Lighthouse, Visual Studio Code
+					</p>
 				</ul>
 			</section>
 			<section>
-				<img class="icon" src="noun_cookie_1083993.png" width="20" />
-				<h3 class="heading">Pastimes</h3>
+				<h3>Pastimes</h3>
+				<br />
 				<ul>
+					<li>Moderator, TorontoJS Slack, 2020-Present</li>
 					<li>
-						Board member since 2017 at an
+						Board member 2017-20 at an
 						<a href="http://brandscape.club" target="_blank">
 							art studio/cowork space
 						</a>
@@ -204,7 +246,6 @@
 					</li>
 					<li>Wikipedia editor, 2013-present</li>
 					<li>Girl Develop It Chicago workshops, 2015</li>
-					<li>Trained my cat to sit</li>
 					<li>
 						<a href="https://asdfg.yelp.ca" target="_blank">Yelp Elite</a>
 						since 2015
@@ -228,27 +269,5 @@
 				</ul>
 			</section>
 		</aside>
-		<footer class="wavy">
-			<ul>
-				<li>
-					<a href="http://github.com/usrrname" target="_blank">
-						<img class="box fade" src="octocat.png" />
-					</a>
-				</li>
-				<li>
-					<a
-						href="https://stackoverflow.com/users/3394599/usrrname"
-						target="_blank"
-					>
-						<img class="box fade" src="stackoverflow.png" />
-					</a>
-				</li>
-				<li>
-					<a href="https://dev.to/jenninat0r" target="_blank">
-						<img class="box fade" src="devTO.png" />
-					</a>
-				</li>
-			</ul>
-		</footer>
 	</body>
 </html>
