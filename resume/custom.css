@@ -65,10 +65,6 @@ a:visited {
 	color: darkblue;
 }
 
-.wrapper {
-	margin: 1rem 2.5rem;
-}
-
 .container {
 	display: flex;
 	flex-direction: column;
@@ -96,6 +92,7 @@ a:visited {
 	}
 	ul.icons {
 		flex-flow: column nowrap;
+		list-style-type: none;
 	}
 }
 
@@ -103,10 +100,6 @@ header {
 	grid-column: span 3;
 	padding: 2rem;
 	text-align: left;
-}
-
-section {
-	padding: 1em 2em;
 }
 
 .box {

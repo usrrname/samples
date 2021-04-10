@@ -7,12 +7,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link
 			rel="stylesheet"
-			href="https://unpkg.com/tachyons/css/tachyons.min.css"
+			href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"
 		/>
+
 		<link rel="stylesheet" href="custom.css" />
 	</head>
 
-	<body class="container">
+	<body class="container w-100 pl4 pr4">
 		<header class="wrapper">
 			<div>
 				<h3>Jen Chan</h3>
@@ -46,213 +47,175 @@
 			</ul>
 		</header>
 		<main>
-			<div class="wrapper">
-				<section>
-					<h3>RELEVANT EXPERIENCE</h3>
-				</section>
-				<section>
-					<h4>UX Developer, Smile CDR, 2019-Present</h4>
-					<br />
-					<ul>
-						<li>
-							Built web applications using HL7 FHIR API, Typescript, Angular,
-							SCSS
-						</li>
-						<li>
-							Introduced design sprints for development of white-label MVP,
-							reduced design iterations from 20 to 3.
-						</li>
-						<li>
-							Ran user prototype testing sessions and gathered feedback on
-							Airtable
-						</li>
-						<li>
-							Screening and recruitment of UX talent, contributed documentation
-							for onboarding 14-20 team members
-						</li>
-						<li>
-							Started triage and prioritization meetings between product owner,
-							UX and QA
-						</li>
-						<li>
-							Convinced management to acquire Figma and Browserstack licenses
-							for improved design and developer collaboration and UI regression
-							testing
-						</li>
-						<li>
-							Built testing and deployment pipeline on Gitlab with automated
-							unit tests, e2e, linting and a11y testing
-						</li>
-					</ul>
-				</section>
-				<section>
-					<h4>Software Engineer, CapIntel, 2019</h4>
-					<br />
-					<ul>
-						<li>
-							Built reusable UI components with sass, React, Typescript and ES6
-							from Zeplin designs. Wrote documentation.
-						</li>
-						<li>
-							Conducted stakeholder interviews for user research, tracked user
-							feedback with AirTable, created user personas and tracked feature
-							requests
-						</li>
-						<li>
-							Ran user testing sessions on design prototypes, tracked user
-							feedback with AirTable
-						</li>
-					</ul>
-				</section>
-				<section>
-					<h4>Support Engineer, ReCollect (remote), 2018</h4>
-					<br />
-					<ul>
-						<li>Tech support for 300 municipalities and their end users</li>
-						<li>
-							Improved internal support tool with JavaScript in a custom web app
-							on FreshDesk
-						</li>
-						<li>
-							Generated metric reports with PostgreSQL, Form integration with
-							SeeClickFix API, GIS data imports with FME Workbench.
-						</li>
-						<li>Wrote tech documentation that onboarded 5 team members</li>
-						<li>
-							Bug triage and reproduction on SauceLabs, LogDNA, Pivotal Tracker.
-							Dev environment on Docker, tmux, vim.
-						</li>
-					</ul>
-				</section>
-				<section>
-					<h4>Front End Developer, Mirum, 2016 – 2017</h4>
-					<br />
-					<ul>
-						<li>
-							Built and tested emails on 40 clients and browsers, quality-tested
-							email automation tool
-						</li>
-						<li>Wrote documentation for web accessibility (a11y) standards</li>
-						<li>
-							Attended client briefings for product requirements, refined QA
-							spec for emails
-						</li>
-						<li>
-							Git workflow and JIRA ticketing, sitemapping with PowerMapper
-						</li>
-					</ul>
-				</section>
-				<section>
-					<h4>App Development Consultant, Trinity Square Video, 2017 – 2018</h4>
-					<br />
-					<ul>
-						<li>
-							Collaborated with 2 developers to research and test different VR
-							libraries. Created a web and mobile app gallery of VR artwork that
-							don’t require a headset to view.
-						</li>
-						<li>Launched V/Art Projects on iOS and Android.</li>
-						<li>
-							Helped with creating VR art exhibition in a mobile app, provided
-							artists with tech support in adapting their work to EEVO and
-							JanusVR platforms
-						</li>
-						<li>
-							Relevant Press:
-							<a
-								href="https://www.theglobeandmail.com/arts/art-and-architecture/venturing-into-the-virtual-world-with-a-new-artapp/article37066961/"
-								target="_blank"
-							>
-								Globe and Mail
-							</a>
-							,
-							<a
-								href="https://www.thestar.com/entertainment/visualarts/2017/12/06/vart-projects-brings-the-virtual-reality-to-wherever-you-are.html"
-								target="_blank"
-							>
-								Toronto Star
-							</a>
-						</li>
-					</ul>
-				</section>
-				<section>
-					<h4>Lecturer, School of Art Institute Chicago, 2013 – 2015</h4>
-					<br />
-					<ul>
-						<li>
-							Taught "Wired I", and "Wired II" (creative coding, glitch art,
-							HTML, CSS, JS, Git, three.js, ProcessingJS)
-						</li>
-					</ul>
-				</section>
-			</div>
-			<div class="wrapper">
-				<section><h3>EDUCATION</h3></section>
-				<section>
-					<ul>
-						<li>
-							Ryerson Continuing Education Computer Science Fundamentals
-							CCPS109, 2020
-						</li>
-						<li>Brainstation Web Development Diploma, 2016</li>
-						<li>
-							Syracuse University Masters of Fine Art, Art Video, 2010 – 2013
-						</li>
-						<li>
-							University of Toronto Mississauga HBA, Communications, Culture,
-							Information Technology, 2006 – 2010
-						</li>
-						<li>Sheridan College Diploma in Digital Culture 2006 – 2010</li>
-						<li>Sheridan College Diploma in Studio Art 2006 – 2010</li>
-					</ul>
-				</section>
-			</div>
+			<section class="ph4">
+				<h3 class="mb2">RELEVANT EXPERIENCE</h3>
+				<h4>UX Developer, Smile CDR, 2019-Present</h4>
+				<ul class="pl0 mb3">
+					<li>
+						Built web applications using HL7 FHIR API, Typescript, Angular,
+						SCSS, Material, Clarity and Bootstrap.
+					</li>
+					<li>
+						Convinced company to acquire Figma for improved designer-developer
+						collaboration, and Browserstack licenses for UI regression testing
+					</li>
+					<li>
+						Implemented white label style guide that's used by 2 projects into
+						an early design system, onboarded dev team to use SASS/SCSS
+					</li>
+					<li>
+						Built testing and deployment pipeline on Gitlab with automated unit
+						tests, e2e, linting and a11y testing
+					</li>
+					<li>
+						Screening and recruitment of UX talent, onboarded 14-20 team members
+						as company grew from 25-150+
+					</li>
+				</ul>
+			</section>
+			<section class="ph4 mb3">
+				<h4>Software Engineer, CapIntel, 2019</h4>
+				<ul class="pl0">
+					<li>Built reusable UI components with SASS, React, Typescript.</li>
+					<li>
+						Conducted stakeholder interviews for user research, led user testing
+						sessions, created integration from Canny, Airtable and JIRA to track
+						feature requests
+					</li>
+				</ul>
+			</section>
+			<section class="ph4 mb3">
+				<h4>Support Engineer, ReCollect (remote), 2018</h4>
+				<ul class="pl0">
+					<li>
+						Tech support for 300 municipal clients and their end users for a
+						white label web app with native Android and Ios products
+					</li>
+					<li>
+						Improved internal support tool with JavaScript in a custom web app
+						on FreshDesk
+					</li>
+					<li>
+						Generated metric reports with PostgreSQL, Form integration with
+						SeeClickFix API, GIS data imports with FME Workbench.
+					</li>
+					<li>Wrote documentation that onboarded 5 team members</li>
+					<li>
+						Bug triage and reproduction on SauceLabs, LogDNA, Pivotal Tracker.
+						Dev environment on Docker, tmux, Vim.
+					</li>
+				</ul>
+			</section>
+			<section class="ph4 mb3">
+				<h4>Front End Developer, Mirum, 2016 – 2017</h4>
+				<ul class="pl0">
+					<li>
+						Built and tested emails on 40 clients and browsers, quality-tested
+						email automation tool
+					</li>
+					<li>Compiled WCAG (a11y) checklist</li>
+					<li>
+						Attended client briefings for product requirements, refined QA spec
+						for emails
+					</li>
+					<li>Git workflow and JIRA ticketing, sitemapping with PowerMapper</li>
+				</ul>
+			</section>
+			<section class="ph4 mb3">
+				<h4>App Development Consultant, Trinity Square Video, 2017 – 2018</h4>
+				<ul class="pl0">
+					<li>
+						Collaborated with 2 developers to research and test different VR
+						libraries. Created a web and mobile app gallery of VR artwork that
+						don’t require a headset to view.
+					</li>
+					<li>Launched V/Art Projects on iOS and Android.</li>
+					<li>
+						Helped with creating VR art exhibition in a mobile app, provided
+						artists with tech support in adapting their work to EEVO and JanusVR
+						platforms
+					</li>
+					<li>
+						Relevant Press:
+						<a
+							href="https://www.theglobeandmail.com/arts/art-and-architecture/venturing-into-the-virtual-world-with-a-new-artapp/article37066961/"
+							target="_blank"
+						>
+							Globe and Mail
+						</a>
+						,
+						<a
+							href="https://www.thestar.com/entertainment/visualarts/2017/12/06/vart-projects-brings-the-virtual-reality-to-wherever-you-are.html"
+							target="_blank"
+						>
+							Toronto Star
+						</a>
+					</li>
+				</ul>
+			</section>
+			<section class="ph4 mb3">
+				<h4>Lecturer, School of Art Institute Chicago, 2013 – 2015</h4>
+				<ul class="pl0">
+					<li>
+						Taught "Wired I", and "Wired II" (creative coding, glitch art, HTML,
+						CSS, JS, Git, three.js, ProcessingJS)
+					</li>
+				</ul>
+			</section>
+			<section class="ph4 mt4 mb3">
+				<h3>EDUCATION</h3>
+				<ul class="pl0">
+					<li>
+						Ryerson Continuing Education Computer Science Fundamentals CCPS109,
+						2020
+					</li>
+					<li>Brainstation Web Development Diploma, 2016</li>
+					<li>
+						Syracuse University Masters of Fine Art, Art Video, 2010 – 2013
+					</li>
+					<li>
+						University of Toronto Mississauga HBA, Communications, Culture,
+						Information Technology, 2006 – 2010
+					</li>
+					<li>Sheridan College Diploma in Digital Culture 2006 – 2010</li>
+					<li>Sheridan College Diploma in Studio Art 2006 – 2010</li>
+				</ul>
+			</section>
 		</main>
 		<aside>
 			<section>
 				<h3 class="mt2">SKILLS</h3>
-			</section>
-			<section>
-				<ul>
+				<ul class="pl0 mb4">
 					<h4>PRODUCTION EXPERIENCE</h4>
-					<br />
 					<p>
-						HTML, CSS, SASS, React, Recux, Javascript, Angular 2+, React, Redux,
-						Typescript, Express, Node, Git
+						HTML, CSS, SASS, React, Javascript, Angular 2+, React, Redux,
+						Typescript, Express, Node, Git, Gitlab-CI
 					</p>
 				</ul>
-				<br />
-				<ul>
+				<ul class="pl0 mb4">
 					<h4>WORKING KNOWLEDGE</h4>
-					<br />
 					<p>
-						Command Line, PostgreSQL, MongoDB, REST API, VueJS, Angular-cli,
-						Angular 1.x, AWS storage, Heroku, LogDNA, Vim, JIRA, Rollbar
+						Command Line, PostgreSQL, MongoDB, REST API, Vue 2, Angular 1.x, AWS
+						storage, Heroku, LogDNA, Vim, JIRA, Rollbar, Python3
 					</p>
 				</ul>
-				<br />
-				<ul>
+				<ul class="pl0 mb4">
 					<h4>TOOLS AND SOFTWARE</h4>
-					<br />
 					<h5>CREATIVE</h5>
-					<br />
 					<p>
-						Photoshop, Illustrator, Illustrator, InDesign, Premiere. InVision,
+						Photoshop, Illustrator, Figma, Zeplin, InDesign, Premiere. InVision,
 						Sketch
 					</p>
-					<br />
 					<h5>DEV ENVIRONMENT</h5>
-					<br />
 					<p>
-						MacOS, Sourcetree, npm, Terminal, Postman, MongoHub, Chrome
-						DevTools, Lighthouse, Visual Studio Code
+						MacOS, Git, npm, Terminal, Postman, Chrome DevTools, Chrome
+						Lighthouse, Visual Studio Code
 					</p>
 				</ul>
 			</section>
 			<section>
-				<h3>Pastimes</h3>
-				<br />
-				<ul>
+				<h3>Pasttimes</h3>
+				<ul class="pl0">
 					<li>Moderator, TorontoJS Slack, 2020-Present</li>
 					<li>
 						Board member 2017-20 at an
